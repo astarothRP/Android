@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Personas Atendidas</string>
+    <string name="title_activity_principal">Recuento</string>
+    <string name="action_exportar">Exportar</string>
+    <string name="action_desconectar">Desconectar</string>
+    <string name="action_consulta">Consulta</string>
+    <string name="action_hoy">Hoy</string>
+    <string name="title_activity_consulta">Consulta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

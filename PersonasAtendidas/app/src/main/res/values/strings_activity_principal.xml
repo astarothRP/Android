@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="noatendida">No Atendida</string>
+    <string name="atendida">Atendida</string>
+    <string name="hombre">Hombre</string>
+
+    <string name="mujer">Mujer</string>
+    <string name="nacional">Nacional</string>
+    <string name="extranjero">Extranjero</string>
+    <string name="total">Total</string>
+</resources>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rperez.ongpersonas.personasatendidas.activities.ConsultaActivity">
+    <item
+        android:id="@+id/action_desconectar"
+        android:title="@string/action_desconectar"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_hoy"
+        android:title="@string/action_hoy"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Conecta 4</string>
+
+    <string name="titleMain">Conecta 4</string>
+    <string name="contentDescription">Botón no existe</string>
+    <string name="jugador">Jugador</string>
+    <string name="maquina">Maquina</string>
+    <string name="ganaMaquina">Gana: Máquina</string>
+    <string name="ganaVerde">Gana: Amarillo</string>
+    <string name="ganaRojo">Gana: Rojo</string>
+    <string name="title_activity_start">Conecta 4</string>
+</resources>

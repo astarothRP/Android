@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="anadir">Añadir</string>
+
+    <string name="error_invalid_email">El email no es válido</string>
+    <string name="error_field_required">Este campo es requerido</string>
+</resources>
