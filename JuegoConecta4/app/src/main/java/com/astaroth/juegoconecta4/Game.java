@@ -56,6 +56,8 @@ public class Game {
     public void juegaMaquina(){
         int[] positionesJugables = getLibres();
         boolean jugado = false;
+        // COMPRUEBO QUE CON 1 FICHA NO GANO
+        // EVITAR QUE GANE EL JUGADOR
         for (int c=0; c<positionesJugables.length; c++) {
             if (positionesJugables[c]!=-1){
                 tablero[positionesJugables[c]][c] = JUG2;
@@ -67,6 +69,7 @@ public class Game {
                 tablero[positionesJugables[c]][c] = LIBRE;
             }
         }
+        // REVISO MEJOR JUGADA JUNTANDO DE MÁS A MENOS (DESDE 4 A 2)
         int contMax = MAXCONECTADO;
         ArrayList<Integer> buscados;
         while (!jugado && contMax>=2){
@@ -87,19 +90,9 @@ public class Game {
                     tablero[positionesJugables[c]][c] = LIBRE;
                 }
             }
-            /*
-            for (int c=0; c<positionesJugables.length; c++) {
-                if (positionesJugables[c]!=-1){
-                    tablero[positionesJugables[c]][c] = JUG1;
-                    if (comprobarCuatro(JUG1, (contMax==MAXCONECTADO), contMax, new Position(positionesJugables[c], c))) {
-                        jugado = true;
-                        break;
-                    }
-                    tablero[positionesJugables[c]][c] = LIBRE;
-                }
-            }*/
             contMax--;
         }
+        // JUEGO AL AZAR PORQUE NO HA ENCONTRADO NADA MEJOR
         if (!jugado){
             int c, cont=-1;
             do {
