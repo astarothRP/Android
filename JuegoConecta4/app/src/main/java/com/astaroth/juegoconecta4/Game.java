@@ -57,39 +57,38 @@ public class Game {
         int[] positionesJugables = getLibres();
         boolean jugado = false;
         // COMPRUEBO QUE CON 1 FICHA NO GANO
+        jugado = juegaParaGanar(positionesJugables, MAXCONECTADO);
         // EVITAR QUE GANE EL JUGADOR
-        for (int c=0; c<positionesJugables.length; c++) {
-            if (positionesJugables[c]!=-1){
-                tablero[positionesJugables[c]][c] = JUG2;
-                if (comprobarCuatro(JUG2, false, MAXCONECTADO, null)) {
-                    tablero[positionesJugables[c]][c] = JUG1;
-                    jugado = true;
-                    break;
-                }
-                tablero[positionesJugables[c]][c] = LIBRE;
-            }
-        }
-        // REVISO MEJOR JUGADA JUNTANDO DE MÁS A MENOS (DESDE 4 A 2)
-        int contMax = MAXCONECTADO;
-        ArrayList<Integer> buscados;
-        while (!jugado && contMax>=2){
-            int c, cont=-1;
-            buscados = new ArrayList<Integer>();
-            while (buscados.size()<positionesJugables.length) {
-                do {
-                    cont++;
-                    c = new Random().nextInt(SIZE);
-                    if (!buscados.contains(new Integer(c))) buscados.add(new Integer(c));
-                } while (positionesJugables[c] == -1 && buscados.size()<positionesJugables.length);
+        if (!jugado) {
+            // COMPRUEBA QUE NO HACE 4
+            for (int c = 0; c < positionesJugables.length; c++) {
                 if (positionesJugables[c] != -1) {
-                    tablero[positionesJugables[c]][c] = JUG1;
-                    if (comprobarCuatro(JUG1, (contMax == MAXCONECTADO), contMax, new Position(positionesJugables[c], c))) {
+                    tablero[positionesJugables[c]][c] = JUG2;
+                    if (comprobarCuatro(JUG2, false, MAXCONECTADO, null)) {
+                        tablero[positionesJugables[c]][c] = JUG1;
                         jugado = true;
                         break;
                     }
                     tablero[positionesJugables[c]][c] = LIBRE;
                 }
             }
+            // COMPRUEBA QUE NO HACE 3 EN HORIZONTAL
+            for (int c = 0; c < positionesJugables.length; c++) {
+                if (positionesJugables[c] != -1) {
+                    tablero[positionesJugables[c]][c] = JUG2;
+                    if (comprobarFilas(JUG2, 3, null)!=null) {
+                        tablero[positionesJugables[c]][c] = JUG1;
+                        jugado = true;
+                        break;
+                    }
+                    tablero[positionesJugables[c]][c] = LIBRE;
+                }
+            }
+        }
+        // REVISO MEJOR JUGADA JUNTANDO DE MÁS A MENOS (DESDE 4 A 2)
+        int contMax = MAXCONECTADO-1;
+        while (!jugado && contMax>=2){
+            jugado = juegaParaGanar(positionesJugables, contMax);
             contMax--;
         }
         // JUEGO AL AZAR PORQUE NO HA ENCONTRADO NADA MEJOR
@@ -103,6 +102,25 @@ public class Game {
                 tablero[positionesJugables[c]][c] = JUG1;
             }
         }
+    }
+    private boolean juegaParaGanar(int[] positionesJugables, int contMax){
+        int c, cont=-1;
+        ArrayList<Integer> buscados = new ArrayList<Integer>();
+        while (buscados.size()<positionesJugables.length) {
+            do {
+                cont++;
+                c = new Random().nextInt(SIZE);
+                if (!buscados.contains(new Integer(c))) buscados.add(new Integer(c));
+            } while (positionesJugables[c] == -1 && buscados.size()<positionesJugables.length);
+            if (positionesJugables[c] != -1) {
+                tablero[positionesJugables[c]][c] = JUG1;
+                if (comprobarCuatro(JUG1, (contMax == MAXCONECTADO), contMax, new Position(positionesJugables[c], c))) {
+                    return true;
+                }
+                tablero[positionesJugables[c]][c] = LIBRE;
+            }
+        }
+        return false;
     }
     private int[] getLibres(){
         int[] positionesJugables = new int[SIZE];
