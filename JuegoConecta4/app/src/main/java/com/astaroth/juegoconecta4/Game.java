@@ -72,6 +72,8 @@ public class Game {
                     tablero[positionesJugables[c]][c] = LIBRE;
                 }
             }
+        }
+        if (!jugado) {
             // COMPRUEBA QUE NO HACE 3 EN HORIZONTAL
             for (int c = 0; c < positionesJugables.length; c++) {
                 if (positionesJugables[c] != -1) {
