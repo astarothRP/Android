@@ -1,10 +1,10 @@
 package com.astaroth.juegoconecta4;
 
-import android.app.Activity;
-import android.content.DialogInterface;
+import android.app.AlertDialog;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -23,6 +23,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         };
     private Game game;
     private int jugadorActual; // 0(contraMaquina) / 1(1) / 2(2)
+    private TextView lblGanador;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +31,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         jugadorActual = getIntent().getExtras().getInt("usuario");
         setContentView(R.layout.activity_main);
         game = new Game();
-        ((TextView)findViewById(R.id.lblGanador)).setOnClickListener(new View.OnClickListener() {
+        lblGanador = (TextView)findViewById(R.id.lblGanador);
+        lblGanador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 restart();
-                ((TextView)v).setText("");
+                ((TextView) v).setText("");
             }
         });
         for(int f=0; f<Game.SIZE; f++){
@@ -43,12 +44,43 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 ((ImageButton)findViewById(ids[f][c])).setOnClickListener(this);
             }
         }
+
         dibujarTablero();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_app, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_ayuda:
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+                // 2. Chain together various setter methods to set the dialog characteristics
+                                builder.setMessage(R.string.dsAyuda);
+                                        //.setTitle(R.string.dialog_title);
+
+                // 3. Get the AlertDialog from create()
+                                AlertDialog dialog = builder.create();
+                dialog.show();
+                break;
+            /*case R.id.action_preferences:
+
+                break;*/
+            case R.id.action_reiniciar:
+                restart();
+                lblGanador.setText("");
+                break;
+        }
+        return super.onContextItemSelected(item);
     }
 
     public void restart(){
         game = new Game();
-        //((TextView) findViewById(R.id.lblGanador)).setText("");
         dibujarTablero();
     }
 
