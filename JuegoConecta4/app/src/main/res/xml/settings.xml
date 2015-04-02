@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/preferencias_usuario">
+        <EditTextPreference
+            android:key="playerName"
+            android:title="@string/nombre"
+            android:maxLength="12"
+            android:defaultValue="@string/amarillo"  />
+        <CheckBoxPreference
+            android:key="empJugador"
+            android:title="@string/empezar"
+            android:defaultValue="true"
+            android:summary="@string/summary_empieza"/>
+        <ListPreference
+            android:key="dificultad"
+            android:title="@string/dificultad"
+            android:entries="@array/dificultades"
+            android:entryValues="@array/dificultadesValues"
+            android:summary="@string/empezar_jugador"
+            android:dialogTitle="@string/dificultad"/>
+        <ListPreference
+            android:key="color"
+            android:title="@string/color" 
+            android:entries="@array/colores"
+            android:entryValues="@array/coloresValues"
+            android:dialogTitle="@string/color"
+            android:summary="@string/summary_color"/>
+    </PreferenceCategory>
+</PreferenceScreen>

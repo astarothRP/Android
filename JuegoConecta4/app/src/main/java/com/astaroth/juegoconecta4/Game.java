@@ -1,5 +1,8 @@
 package com.astaroth.juegoconecta4;
 
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -10,10 +13,13 @@ import java.util.Random;
 public class Game {
     public static final int SIZE = 7, LIBRE=0, JUG1=1, JUG2=2, MAXCONECTADO=4, MAQUINA=0;
     public static final int JUGANDO = 1, FINALIZADO = 2;
+    public static final String ROJO = "1", AMARILLO = "2";
+    public static final String DIFICIL = "1", MEDIO = "2", FACIL = "3";
     private int tablero[][];
     private int state;
+    private int dificultad;
 
-    public Game() {
+    public Game(int dificultad) {
         tablero = new int[SIZE][SIZE];
         state = JUGANDO;
         for(int f=0; f<SIZE; f++){
@@ -21,6 +27,7 @@ public class Game {
                 tablero[f][c]=0;
             }
         }
+        this.dificultad = dificultad;
     }
     public boolean sePuedeColocarFicha(int f, int c){
         if (tablero[f][c] != LIBRE) return false;
@@ -32,34 +39,13 @@ public class Game {
         return true;
     }
 
-    /*public void juegaMaquina(List<Integer> used){
-        if (used == null) used = new ArrayList<Integer>();
-        if (used.size()!=SIZE) {
-            boolean changed = false;
-            int c;
-            do {
-                c = new Random().nextInt(SIZE);
-            } while (used.contains(new Integer(c)));
-            for (int g = 0; g < SIZE; g++) {
-                if (tablero[g][c] == LIBRE) {
-                    tablero[g][c] = JUG1;
-                    changed = true;
-                    break;
-                }
-            }
-            if (!changed) {
-                used.add(c);
-                juegaMaquina(used);
-            }
-        }
-    }*/
     public void juegaMaquina(){
         int[] positionesJugables = getLibres();
         boolean jugado = false;
         // COMPRUEBO QUE CON 1 FICHA NO GANO
-        jugado = juegaParaGanar(positionesJugables, MAXCONECTADO);
+        if (!jugado) jugado = juegaParaGanar(positionesJugables, MAXCONECTADO);
         // EVITAR QUE GANE EL JUGADOR
-        if (!jugado) {
+        if (!jugado && dificultad==Integer.parseInt(DIFICIL)) {
             // COMPRUEBA QUE NO HACE 4
             for (int c = 0; c < positionesJugables.length; c++) {
                 if (positionesJugables[c] != -1) {
@@ -73,7 +59,7 @@ public class Game {
                 }
             }
         }
-        if (!jugado) {
+        if (!jugado && dificultad==Integer.parseInt(DIFICIL)) {
             // COMPRUEBA QUE NO HACE 3 EN HORIZONTAL
             for (int c = 0; c < positionesJugables.length; c++) {
                 if (positionesJugables[c] != -1) {
@@ -89,7 +75,7 @@ public class Game {
         }
         // REVISO MEJOR JUGADA JUNTANDO DE MÁS A MENOS (DESDE 4 A 2)
         int contMax = MAXCONECTADO-1;
-        while (!jugado && contMax>=2){
+        while (!jugado && contMax>=2 && dificultad!=Integer.parseInt(FACIL)){
             jugado = juegaParaGanar(positionesJugables, contMax);
             contMax--;
         }
@@ -124,6 +110,7 @@ public class Game {
         }
         return false;
     }
+
     private int[] getLibres(){
         int[] positionesJugables = new int[SIZE];
         for (int c = 0; c < SIZE; c++) {
@@ -307,6 +294,9 @@ public class Game {
         return tablero[f][c]==JUG2;
     }
     public int getState(){return state;}
+    public void setDificultad(int dificultad){
+        this.dificultad = dificultad;
+    }
 
     public void juegaJugador(int jugador, int f, int c){
         tablero[f][c] = jugador;

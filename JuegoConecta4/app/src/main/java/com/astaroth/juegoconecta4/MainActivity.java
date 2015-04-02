@@ -1,7 +1,10 @@
 package com.astaroth.juegoconecta4;
 
 import android.app.AlertDialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,7 +25,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             {R.id.button60, R.id.button61, R.id.button62, R.id.button63, R.id.button64, R.id.button65, R.id.button66},
         };
     private Game game;
-    private int jugadorActual; // 0(contraMaquina) / 1(1) / 2(2)
+    // EL JUGADOR PRINCIPAL ES EL JUGADOR 2 (COLOR DE PREFERENCES, POR DEFECTO AMARILLO)
+    private int jugadorActual, jugadorInicial; // 0(contraMaquina) / 1(1) / 2(2)
     private TextView lblGanador;
     
     @Override
@@ -30,13 +34,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         jugadorActual = getIntent().getExtras().getInt("usuario");
         setContentView(R.layout.activity_main);
-        game = new Game();
+
         lblGanador = (TextView)findViewById(R.id.lblGanador);
         lblGanador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 restart();
-                ((TextView) v).setText("");
             }
         });
         for(int f=0; f<Game.SIZE; f++){
@@ -44,8 +47,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 ((ImageButton)findViewById(ids[f][c])).setOnClickListener(this);
             }
         }
-
-        dibujarTablero();
     }
 
     @Override
@@ -59,38 +60,50 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         switch (item.getItemId()) {
             case R.id.action_ayuda:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-
-                // 2. Chain together various setter methods to set the dialog characteristics
-                                builder.setMessage(R.string.dsAyuda);
-                                        //.setTitle(R.string.dialog_title);
-
-                // 3. Get the AlertDialog from create()
-                                AlertDialog dialog = builder.create();
+                builder.setMessage(R.string.dsAyuda);
+                AlertDialog dialog = builder.create();
                 dialog.show();
                 break;
-            /*case R.id.action_preferences:
-
-                break;*/
+            case R.id.action_preferences:
+                startActivity(new Intent(this, PreferenceActivity.class));
+                break;
             case R.id.action_reiniciar:
                 restart();
-                lblGanador.setText("");
                 break;
         }
         return super.onContextItemSelected(item);
     }
 
-    public void restart(){
-        game = new Game();
-        dibujarTablero();
+    @Override
+    protected void onStart() {
+        super.onStart();
+        restart();
     }
 
+    public void restart(){
+        lblGanador.setText("");
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        int dificultad = Integer.parseInt(sharedPref.getString(PreferenceActivity.DIFICULTAD, Game.DIFICIL));
+        boolean empiezaJugador = sharedPref.getBoolean(PreferenceActivity.EMPIEZA_JUGADOR, true);
+        game = new Game(dificultad);
+        if (jugadorActual==Game.MAQUINA && !empiezaJugador) game.juegaMaquina();
+        else if (jugadorActual!=Game.MAQUINA) {
+            if (empiezaJugador) jugadorActual = Game.JUG2;
+            else jugadorActual = Game.JUG1;
+        }
+        dibujarTablero();
+    }
+    // EL COLOR DE PREFERENCES ES PARA EL JUG2. POR DEFECTO ES JUG2 (AMARILLO)
     private void dibujarTablero(){
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        int color = Integer.parseInt(sharedPref.getString(PreferenceActivity.COLOR, Game.AMARILLO));
         int drawable;
         for(int f=0; f<Game.SIZE; f++){
             for(int c=0; c<Game.SIZE; c++){
                 ImageButton image = ((ImageButton)findViewById(ids[f][c]));
                 if (game.isLibre(f, c)) drawable = R.drawable.vacio;
-                else if (game.isJugador1(f, c)) drawable = R.drawable.jug1;
+                else if ((game.isJugador1(f, c) && color==Integer.parseInt(Game.AMARILLO)) ||
+                        (game.isJugador2(f, c) && color!=Integer.parseInt(Game.AMARILLO))) drawable = R.drawable.jug1;
                 else drawable = R.drawable.jug2;
                 image.setImageDrawable(getResources().getDrawable(drawable));
             }
@@ -98,14 +111,19 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     }
 
     private String getTextoGanador(int jugador){
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+        String name = sharedPref.getString(PreferenceActivity.USER, "");
+        int color = Integer.parseInt(sharedPref.getString(PreferenceActivity.COLOR, Game.AMARILLO));
         if (jugador==Game.MAQUINA) {
             return getString(R.string.ganaMaquina);
-        } else if (jugador==Game.JUG1) {
+        } else if (!"".equals(name) && jugador==Game.JUG2) {
+            return getString(R.string.gana) + " " + name;
+        } else if ((jugador==Game.JUG2 && color==Integer.parseInt(Game.ROJO))
+                    || (jugador==Game.JUG1 && color==Integer.parseInt(Game.AMARILLO))) {
             return getString(R.string.ganaRojo);
-        } else if (jugador==Game.JUG2) {
-            return getString(R.string.ganaVerde);
+        } else {
+            return getString(R.string.ganaAmarillo);
         }
-        return "";
     }
 
     @Override

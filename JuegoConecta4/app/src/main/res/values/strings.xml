@@ -6,15 +6,30 @@
     <string name="jugador">Jugador</string>
     <string name="maquina">Maquina</string>
     <string name="ganaMaquina">Gana: Máquina</string>
-    <string name="ganaVerde">Gana: Amarillo</string>
+    <string name="ganaAmarillo">Gana: Amarillo</string>
     <string name="ganaRojo">Gana: Rojo</string>
+    <string name="gana">Gana: </string>
     <string name="ayuda">Ayuda</string>
     <string name="reiniciar">Reiniciar</string>
+    <string name="empezar">Empezar el jugador</string>
+    <string name="empezar_jugador">(Sólo contra la máquina)</string>
+    <string name="color">Color</string>
+    <string name="rojo">Rojo</string>
+    <string name="amarillo">Amarillo</string>
+    <string name="preferencias_usuario">Ajustes del usuario</string>
+    <string name="nombre">Nombre del jugador</string>
+    <string name="dificultad">Dificultad</string>
+    <string name="facil">Facil</string>
+    <string name="medio">Medio</string>
+    <string name="dificil">Dificil</string>
     <string name="preferencias">Preferencias</string>
     <string name="title_activity_start">Conecta 4</string>
     <string name="dsAyuda">El objetivo de "Conecta 4" es alinear cuatro fichas sobre un tablero. Cada jugador dispone de 25 fichas de un color (por lo general, rojas o amarillas). Por turnos, los jugadores deben introducir una ficha en la columna que prefieran (siempre que no esté completa) y ésta caerá a la posición más baja. Gana la partida el primero que consiga alinear cuatro fichas consecutivas de un mismo color en horizontal, vertical o diagonal. Si todas las columnas están llenas pero nadie ha hecho una fila válida, hay empate.</string>
     <string name="title_activity_help">HelpActivity</string>
+    <string name="summary_color">(Del jugador cuyo nombre está especificado)</string>
+    <string name="summary_empieza">(Del jugador cuyo nombre está especificado)</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dificultades">
+        <item>@string/dificil</item>
+        <item>@string/medio</item>
+        <item>@string/facil</item>
+    </string-array>
+    <string-array name="dificultadesValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="colores">
+        <item>@string/rojo</item>
+        <item>@string/amarillo</item>
+    </string-array>
+    <string-array name="coloresValues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
