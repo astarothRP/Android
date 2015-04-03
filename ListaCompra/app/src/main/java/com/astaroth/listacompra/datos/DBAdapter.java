@@ -24,7 +24,7 @@ import java.util.Set;
 public class DBAdapter {
     //constantes para BD y tablas
     private static final String DATABASE_NAME="ListaCompra";
-    private static final int DATABASE_VERSION=7;
+    private static final int DATABASE_VERSION=8;
     private static final String DATABASE_TABLE_USUARIOS="usuarios";
     private static final String DATABASE_TABLE_LISTAS="listas";
     private static final String DATABASE_TABLE_ARTICULOS="articulos";
@@ -70,13 +70,17 @@ public class DBAdapter {
     //campos
     public static final String DB_FKIDLISTA="fkidlista";
     public static final String DB_CANTIDAD="cantidad";
-    public static final String[] camposArticulo = new String[]{DB_ID, DB_DESCRIPCION, DB_CANTIDAD, DB_FKIDLISTA};
+    public static final String DB_IMPORTE="ipmorte";
+    public static final String DB_MARCADO="marcado";
+    public static final String[] camposArticulo = new String[]{DB_ID, DB_DESCRIPCION, DB_CANTIDAD, DB_FKIDLISTA, DB_IMPORTE, DB_MARCADO};
     //instrucciones SQL
     private static final String DATABASE_CREATE_ARTICULOS=
             "create table "+DATABASE_TABLE_ARTICULOS+" ("+DB_ID+" integer primary key autoincrement, "+
                     DB_DESCRIPCION+" text not null," +
                     DB_CANTIDAD+" text null," +
-                    DB_FKIDLISTA+" integer not null" +
+                    DB_FKIDLISTA+" integer not null," +
+                    DB_IMPORTE+" real null," +
+                    DB_MARCADO+" integer not null" +
                     ")";
     private static final String DATABASE_DELETE_ARTICULOS=
             "drop table if exists "+DATABASE_TABLE_ARTICULOS;
@@ -139,17 +143,17 @@ public class DBAdapter {
 
             ListaSerializable listaActual = new ListaSerializable("Lista actual", (int)idUser, 1);
             long idListaActual = db.insert(DATABASE_TABLE_LISTAS, null, listaActual.getContentValuesToDB());
-            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 1", "2", (int)idListaActual)).getContentValuesToDB());
-            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 2", "1", (int)idListaActual)).getContentValuesToDB());
-            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 3", "1", (int)idListaActual)).getContentValuesToDB());
-            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 4", "6", (int)idListaActual)).getContentValuesToDB());
+            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 1", "2", (int) idListaActual, 0, 0)).getContentValuesToDB());
+            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 2", "1", (int) idListaActual, 5, 1)).getContentValuesToDB());
+            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 3", "1", (int) idListaActual, 9.45, 0)).getContentValuesToDB());
+            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 4", "6", (int) idListaActual, 0, 0)).getContentValuesToDB());
 
             ListaSerializable otraLista = new ListaSerializable("Lista no actual", (int)idUser, 0);
             long idListaNoActual = db.insert(DATABASE_TABLE_LISTAS, null, otraLista.getContentValuesToDB());
-            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 1", "0", (int)idListaNoActual)).getContentValuesToDB());
-            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 2", "0", (int)idListaNoActual)).getContentValuesToDB());
-            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 3", "10", (int)idListaNoActual)).getContentValuesToDB());
-            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 4", "15", (int)idListaNoActual)).getContentValuesToDB());
+            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 1", "0", (int)idListaNoActual, 0, 0)).getContentValuesToDB());
+            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 2", "0", (int)idListaNoActual, 0, 0)).getContentValuesToDB());
+            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 3", "10", (int)idListaNoActual, 9, 1)).getContentValuesToDB());
+            db.insert(DATABASE_TABLE_ARTICULOS, null, (new ArticuloSerializable("Articulo 4", "15", (int)idListaNoActual, 5, 1)).getContentValuesToDB());
         }
 
         private void deleteTables(SQLiteDatabase db) {
@@ -210,7 +214,7 @@ public class DBAdapter {
                             , DB_FKIDLISTA + "=?", new String[]{String.valueOf(lista.getId())}, null, null, null);
                     List<ArticuloSerializable> articulo = new ArrayList<ArticuloSerializable>();
                     while (c.moveToNext()) {
-                        a = new ArticuloSerializable(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3));
+                        a = new ArticuloSerializable(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3), c.getDouble(4), c.getInt(5));
                         if ("0".equals(a.getCantidad())) a.setCantidad("");
                         articulo.add(a);
                     }
@@ -378,7 +382,7 @@ public class DBAdapter {
     public List<ArticuloSerializable> getArticulosByCursor(Cursor c){
         List<ArticuloSerializable> articulos = new ArrayList<ArticuloSerializable>();
         while (c.moveToNext()){
-            articulos.add(new ArticuloSerializable(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3)));
+            articulos.add(new ArticuloSerializable(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3), c.getDouble(4), c.getInt(5)));
         }
         return  articulos;
     }
@@ -430,6 +434,11 @@ public class DBAdapter {
 
     public void deleteArticulo(int id){
         deleteItem(DATABASE_TABLE_ARTICULOS, id);
+    }
+    public void marcaArticulo(int id, int marca){
+        ContentValues values = new ContentValues();
+        values.put(DB_MARCADO, marca);
+        db.update(DATABASE_TABLE_ARTICULOS, values, DB_ID+"=?", new String[]{String.valueOf(id)});
     }
     public void deleteUsuario(int id){
         deleteItem(DATABASE_TABLE_USUARIOS, id);

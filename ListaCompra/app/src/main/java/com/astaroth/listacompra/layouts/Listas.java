@@ -265,7 +265,10 @@ public class Listas extends ActionBarActivity {
                                         articulos.add(new ArticuloSerializable(((Long) articuloHM.get("id")).intValue()
                                                 , (String) articuloHM.get("descripcion")
                                                 , (String) articuloHM.get("cantidad")
-                                                , ((Long) articuloHM.get("fkIdLista")).intValue()));
+                                                , ((Long) articuloHM.get("fkIdLista")).intValue()
+                                                , ((Double) articuloHM.get("importe")).doubleValue()
+                                                , ((Integer) articuloHM.get("marcado")).intValue()
+                                        ));
                                     }
                                 }
                             } catch (ClassCastException e) {
@@ -282,7 +285,10 @@ public class Listas extends ActionBarActivity {
                                             articulos.add(new ArticuloSerializable(((Long) articuloHM.get("id")).intValue()
                                                     , (String) articuloHM.get("descripcion")
                                                     , (String) articuloHM.get("cantidad")
-                                                    , ((Long) articuloHM.get("fkIdLista")).intValue()));
+                                                    , ((Long) articuloHM.get("fkIdLista")).intValue()
+                                                    , ((Double) articuloHM.get("importe")).doubleValue()
+                                                    , ((Integer) articuloHM.get("marcado")).intValue()
+                                            ));
                                         }
                                     }
                                 } catch (ClassCastException e) {

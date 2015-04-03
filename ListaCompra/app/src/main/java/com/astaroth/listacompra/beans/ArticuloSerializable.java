@@ -14,21 +14,27 @@ public class ArticuloSerializable implements Serializable {
     private String descripcion;
     private String cantidad;
     private int fkIdLista;
+    private double importe;
+    private int marcado;
 
     public ArticuloSerializable() {
     }
 
-    public ArticuloSerializable(int id, String descripcion, String cantidad, int fkIdLista) {
+    public ArticuloSerializable(int id, String descripcion, String cantidad, int fkIdLista, double importe, int marcado) {
         this.id = id;
         this.descripcion = descripcion;
         this.cantidad = cantidad;
         this.fkIdLista = fkIdLista;
+        this.importe = importe;
+        this.marcado = marcado;
     }
 
-    public ArticuloSerializable(String descripcion, String cantidad, int fkIdLista) {
+    public ArticuloSerializable(String descripcion, String cantidad, int fkIdLista, double importe, int marcado) {
         this.descripcion = descripcion;
         this.cantidad = cantidad;
         this.fkIdLista = fkIdLista;
+        this.importe = importe;
+        this.marcado = marcado;
     }
 
     public int getId() {
@@ -63,15 +69,33 @@ public class ArticuloSerializable implements Serializable {
         this.fkIdLista = fkIdLista;
     }
 
+    public double getImporte() {
+        return importe;
+    }
+
+    public void setImporte(double importe) {
+        this.importe = importe;
+    }
+
+    public int getMarcado() {
+        return marcado;
+    }
+
+    public void setMarcado(int marcado) {
+        this.marcado = marcado;
+    }
+
     public ContentValues getContentValuesToDB(){
         ContentValues initialValues=new ContentValues();
         initialValues.put(DBAdapter.DB_DESCRIPCION, getDescripcion());
         initialValues.put(DBAdapter.DB_CANTIDAD, getCantidad());
         initialValues.put(DBAdapter.DB_FKIDLISTA, getFkIdLista());
+        initialValues.put(DBAdapter.DB_IMPORTE, getImporte());
+        initialValues.put(DBAdapter.DB_MARCADO, getMarcado());
         return initialValues;
     }
 
     public Articulo getArticulo(){
-        return new Articulo(id, descripcion, cantidad, fkIdLista);
+        return new Articulo(id, descripcion, cantidad, fkIdLista, importe, marcado);
     }
 }

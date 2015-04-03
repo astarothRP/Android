@@ -1,11 +1,15 @@
 package com.astaroth.listacompra.layouts;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.DialogFragment;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -14,13 +18,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.astaroth.listacompra.R;
 import com.astaroth.listacompra.Utils.StringUtil;
+import com.astaroth.listacompra.Utils.SwipeListViewTouchListener;
+import com.astaroth.listacompra.beans.Articulo;
 import com.astaroth.listacompra.beans.ArticuloSerializable;
 import com.astaroth.listacompra.beans.ListaSerializable;
 import com.astaroth.listacompra.beans.Usuario;
@@ -33,6 +41,7 @@ public class ListaActual extends ActionBarActivity {
     private ListView listaArticulos;
     List<ArticuloSerializable> articulos;
     ListaSerializable actual;
+    private TextView total;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +49,7 @@ public class ListaActual extends ActionBarActivity {
         setContentView(R.layout.activity_lista_actual);
         usuario = (Usuario)getIntent().getExtras().get("usuario");
         actual = (ListaSerializable)getIntent().getExtras().get("lista");
+        total = (TextView)findViewById(R.id.total);
         listaArticulos = (ListView)findViewById(R.id.listaArticulos);
         listaArticulos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -56,6 +66,23 @@ public class ListaActual extends ActionBarActivity {
             }
         });
         registerForContextMenu(listaArticulos);
+        //Deslizar item para borrarlo
+        SwipeListViewTouchListener touchListener =new SwipeListViewTouchListener(listaArticulos,new SwipeListViewTouchListener.OnSwipeCallback() {
+            @Override
+            public void onSwipeLeft(ListView listView, int [] reverseSortedPositions) {
+                //Aqui ponemos lo que hara el programa cuando deslizamos un item ha la izquierda
+                DialogFragment dialogoConfirmar = DialogoBorrado.newInstance(articulos.get(reverseSortedPositions[0]));
+                dialogoConfirmar.show(getFragmentManager(), "dialog");
+            }
+            @Override
+            public void onSwipeRight(ListView listView, int [] reverseSortedPositions) {
+                //Aqui ponemos lo que hara el programa cuando deslizamos un item ha la derecha
+                marcaArticulo(articulos.get(reverseSortedPositions[0]));
+                setData();
+            }
+        },false, false);
+        listaArticulos.setOnTouchListener(touchListener);
+        listaArticulos.setOnScrollListener(touchListener.makeScrollListener());
     }
 
     @Override
@@ -109,6 +136,10 @@ public class ListaActual extends ActionBarActivity {
                 DialogFragment dialogoSeleccion = DialogoUsuario.newInstance(R.string.editar_articulo, articulos.get(info.position));
                 dialogoSeleccion.show(getFragmentManager(), "dialog");
                 break;
+            case R.id.action_marcar:
+                marcaArticulo(articulos.get(info.position));
+                setData();
+                break;
         }
         return true;
     }
@@ -123,17 +154,17 @@ public class ListaActual extends ActionBarActivity {
         DBAdapter adp=new DBAdapter(this);
         adp.open();
         //actual = adp.getActual(usuario.getId());
-        Cursor c = null;
         if (actual!=null) {
             setTitle(actual.getDescripcion());
-            c = adp.getCursorArticulosByLista(actual.getId());
-            articulos = adp.getArticulosByCursor(c);
+            articulos = adp.getArticulosByLista(actual.getId());
         }
         adp.close();
-        if (c!=null) {
-            String[] columnas = {DBAdapter.DB_DESCRIPCION, DBAdapter.DB_CANTIDAD};
-            int[] vistas = {R.id.descripcion, R.id.cantidad};
-            SimpleCursorAdapter adapter = new SimpleCursorAdapter(this, R.layout.control_articulo, c, columnas, vistas, 0);
+        if (articulos!=null && articulos.size()>0) {
+            double suma = 0;
+            for (ArticuloSerializable toSum : articulos) suma += toSum.getImporte();
+            if (suma!=0) total.setText(getString(R.string.total) + String.valueOf(suma));
+            else total.setText("");
+            ListaArticuloAdapter adapter = new ListaArticuloAdapter(this, R.layout.control_articulo, articulos);
             listaArticulos.setAdapter(adapter);
         }
     }
@@ -143,6 +174,12 @@ public class ListaActual extends ActionBarActivity {
         adp.deleteArticulo(idArticulo);
         adp.close();
     }
+    public void marcaArticulo (ArticuloSerializable articulo){
+        DBAdapter adp=new DBAdapter(this);
+        adp.open();
+        adp.marcaArticulo(articulo.getId(), (articulo.getMarcado() == 0 ? 1 : 0));
+        adp.close();
+    }
     public void guardarArticulo (ArticuloSerializable articulo){
         if (articulo.getFkIdLista()==0) articulo.setFkIdLista(actual.getId());
         DBAdapter adp=new DBAdapter(this);
@@ -150,9 +187,45 @@ public class ListaActual extends ActionBarActivity {
         adp.insertArticulo(articulo);
         adp.close();
     }
+    public static class DialogoBorrado extends DialogFragment {
+        ArticuloSerializable articuloD;
+        static DialogoBorrado newInstance(ArticuloSerializable articulo) {
+            DialogoBorrado f = new DialogoBorrado();
+            Bundle args = new Bundle();
+            args.putSerializable("articulo", articulo);
+            f.setArguments(args);
+            return f;
+        }
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            articuloD = (ArticuloSerializable)getArguments().getSerializable("articulo");
+
+            return new AlertDialog.Builder(getActivity())
+                    .setMessage(R.string.conf_borrar_articulo)
+                    .setPositiveButton(R.string.si,
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    deleteArticuloDialog();
+                                }
+                            }
+                    )
+                    .setNegativeButton(R.string.no,
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) { }
+                            }
+                    )
+                    .create();
+        }
+        public void deleteArticuloDialog(){
+            ((ListaActual)getActivity()).deleteArticulo(articuloD.getId());
+            ((ListaActual)getActivity()).setData();
+        }
+    }
     public static class DialogoUsuario extends DialogFragment {
         EditText nombre;
         EditText cantidad;
+        EditText importe;
+        CheckBox marcado;
         ArticuloSerializable articulo;
 
         @Override
@@ -191,9 +264,13 @@ public class ListaActual extends ActionBarActivity {
             });
             nombre = (EditText) v.findViewById(R.id.dialog_nombre);
             cantidad = (EditText) v.findViewById(R.id.dialog_cantidad);
+            importe = (EditText) v.findViewById(R.id.dialog_importe);
+            marcado = (CheckBox) v.findViewById(R.id.dialog_marcado);
             if (articulo!=null) {
                 nombre.setText(articulo.getDescripcion());
                 cantidad.setText(String.valueOf(articulo.getCantidad()));
+                if (articulo.getImporte()!=0) importe.setText(String.valueOf(articulo.getImporte()));
+                if (articulo.getMarcado()==1) marcado.setChecked(true);
             }
             return v;
         }
@@ -210,6 +287,9 @@ public class ListaActual extends ActionBarActivity {
                 //if (StringUtil.isNullOrEmpty(cantidad.getText().toString())) articulo.setCantidad(0);
                 articulo.setCantidad(cantidad.getText().toString());
                 articulo.setDescripcion(nombre.getText().toString());
+                if (!StringUtil.isNullOrEmpty(importe.getText().toString())) articulo.setImporte(Double.parseDouble(importe.getText().toString()));
+                else articulo.setImporte(0);
+                articulo.setMarcado(marcado.isChecked() ? 1 : 0);
                 ((ListaActual)getActivity()).guardarArticulo(articulo);
                 ((ListaActual)getActivity()).setData();
                 this.getDialog().cancel();

@@ -29,6 +29,11 @@
     <string name="no_dispositivos">No hay dispositivos</string>
     <string name="buscar">Buscar</string>
     <string name="buscando">Buscando</string>
+    <string name="marcar">Marcar</string>
+    <string name="importe">Importe</string>
+    <string name="marcado">Marcado</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
     <string name="conectado_a">Conectado a</string>
     <string name="elija_dispositivo">Elija</string>
     <string name="lista_enviada">Lista enviada correctamente</string>
@@ -51,8 +56,9 @@
     <string name="error_no_bluetooth">El dispositivo no acepta enviar por Bluetooth</string>
     <string name="error_no_articulo_en_lista">No hay artículos que enviar</string>
     <string name="title_activity_lista_actual">Actual</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="total">Total: </string>
     <string name="title_activity_listas">Listas</string>
     <string name="title_activity_dispositivos_bluetooth">Dispositivos Bluetooth</string>
+    <string name="conf_borrar_articulo">¿Confirma que desea borrar el artículo?</string>
 
 </resources>

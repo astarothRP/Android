@@ -19,11 +19,30 @@
         android:inputType="text"
         android:maxLines="1"
         android:singleLine="true" />
-    <ImageView android:id="@+id/dialog_entrar"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+    <EditText android:id="@+id/dialog_importe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/importe"
         android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:src="@drawable/entrar"
-        android:clickable="true" />
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:singleLine="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/dialog_marcado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/marcado"/>
+        <ImageView android:id="@+id/dialog_entrar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/entrar"
+            android:clickable="true" />
+    </RelativeLayout>
 </LinearLayout>

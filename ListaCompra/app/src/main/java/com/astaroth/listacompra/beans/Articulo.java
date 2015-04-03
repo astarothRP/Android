@@ -14,21 +14,27 @@ public class Articulo {
     private String descripcion;
     private String cantidad;
     private int fkIdLista;
+    private double importe;
+    private int marcado;
 
     public Articulo() {
     }
 
-    public Articulo(int id, String descripcion, String cantidad, int fkIdLista) {
+    public Articulo(int id, String descripcion, String cantidad, int fkIdLista, double importe, int marcado) {
         this.id = id;
         this.descripcion = descripcion;
         this.cantidad = cantidad;
         this.fkIdLista = fkIdLista;
+        this.importe = importe;
+        this.marcado = marcado;
     }
 
-    public Articulo(String descripcion, String cantidad, int fkIdLista) {
+    public Articulo(String descripcion, String cantidad, int fkIdLista, double importe, int marcado) {
         this.descripcion = descripcion;
         this.cantidad = cantidad;
         this.fkIdLista = fkIdLista;
+        this.importe = importe;
+        this.marcado = marcado;
     }
 
     public int getId() {
@@ -61,5 +67,21 @@ public class Articulo {
 
     public void setFkIdLista(int fkIdLista) {
         this.fkIdLista = fkIdLista;
+    }
+
+    public double getImporte() {
+        return importe;
+    }
+
+    public void setImporte(double importe) {
+        this.importe = importe;
+    }
+
+    public int getMarcado() {
+        return marcado;
+    }
+
+    public void setMarcado(int marcado) {
+        this.marcado = marcado;
     }
 }

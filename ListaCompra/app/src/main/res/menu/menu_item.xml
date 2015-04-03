@@ -7,6 +7,10 @@
         app:showAsAction="ifRoom" />
     <item android:id="@+id/action_borrar"
         android:title="@string/borrar"
-        android:orderInCategory="100"
+        android:orderInCategory="120"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_marcar"
+        android:title="@string/marcar"
+        android:orderInCategory="120"
         app:showAsAction="ifRoom" />
 </menu>

@@ -16,12 +16,24 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_weight="1.2"/>
-    <ImageView android:id="@+id/actual_anadir"
-        android:layout_width="40dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:src="@drawable/anadir"
-        android:layout_gravity="right"
         android:layout_weight="1"
-        android:clickable="true" />
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignBottom="@+id/actual_anadir"
+            android:textSize="24dp" />
+        <ImageView android:id="@+id/actual_anadir"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/anadir"
+            android:layout_alignParentEnd="true"
+            android:clickable="true" />
+    </RelativeLayout>
 </LinearLayout>
