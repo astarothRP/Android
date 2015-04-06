@@ -11,7 +11,7 @@ android {
     }
     defaultConfig {
         applicationId "com.astaroth.listacompra"
-        minSdkVersion 17
+        minSdkVersion 15
         targetSdkVersion 21
         versionName '1.1.2'
         versionCode 6
