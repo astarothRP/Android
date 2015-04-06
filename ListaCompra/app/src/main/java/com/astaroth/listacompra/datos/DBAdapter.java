@@ -24,7 +24,7 @@ import java.util.Set;
 public class DBAdapter {
     //constantes para BD y tablas
     private static final String DATABASE_NAME="ListaCompra";
-    private static final int DATABASE_VERSION=10;
+    private static final int DATABASE_VERSION=8;
     private static final String DATABASE_TABLE_USUARIOS="usuarios";
     private static final String DATABASE_TABLE_LISTAS="listas";
     private static final String DATABASE_TABLE_ARTICULOS="articulos";
@@ -73,6 +73,7 @@ public class DBAdapter {
     public static final String DB_IMPORTE="ipmorte";
     public static final String DB_MARCADO="marcado";
     public static final String[] camposArticulo = new String[]{DB_ID, DB_DESCRIPCION, DB_CANTIDAD, DB_FKIDLISTA, DB_IMPORTE, DB_MARCADO};
+    public static final String[] camposArticulo_7 = new String[]{DB_ID, DB_DESCRIPCION, DB_CANTIDAD, DB_FKIDLISTA};
     //instrucciones SQL
     private static final String DATABASE_CREATE_ARTICULOS=
             "create table "+DATABASE_TABLE_ARTICULOS+" ("+DB_ID+" integer primary key autoincrement, "+
@@ -120,10 +121,10 @@ public class DBAdapter {
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             // extraer datos para volver a insertar
-            List<Usuario> usuarios = getAllUsuarios(db);
-            HashMap<String, List<ListaSerializable>> listas = getAllListas(db, usuarios);
-            HashMap<String, List<ArticuloSerializable>> articulos = getAllArticulos(db, listas);
-            List<UsuarioSend> userSend = getAllUsuariosSend(db);
+            List<Usuario> usuarios = getAllUsuarios(db, oldVersion);
+            HashMap<String, List<ListaSerializable>> listas = getAllListas(db, usuarios, oldVersion);
+            HashMap<String, List<ArticuloSerializable>> articulos = getAllArticulos(db, listas, oldVersion);
+            List<UsuarioSend> userSend = getAllUsuariosSend(db, oldVersion);
             deleteTables(db);
             createTables(db);
             createData(db, usuarios, listas, articulos, userSend);
@@ -162,7 +163,7 @@ public class DBAdapter {
             db.execSQL(DATABASE_DELETE_ARTICULOS);
             db.execSQL(DATABASE_DELETE_USUARIOS_SEND);
         }
-        private List<UsuarioSend> getAllUsuariosSend(SQLiteDatabase db){
+        private List<UsuarioSend> getAllUsuariosSend(SQLiteDatabase db, int oldVersion){
             List<UsuarioSend> usuarios = new ArrayList<UsuarioSend>();
             try {
                 Cursor c = db.query(DATABASE_TABLE_USUARIOS_SEND
@@ -176,7 +177,7 @@ public class DBAdapter {
             }
             return usuarios;
         }
-        private List<Usuario> getAllUsuarios(SQLiteDatabase db){
+        private List<Usuario> getAllUsuarios(SQLiteDatabase db, int oldVersion){
             Cursor c = db.query(DATABASE_TABLE_USUARIOS
                     , camposUsuario
                     , null, null, null,null,null);
@@ -188,7 +189,7 @@ public class DBAdapter {
             }
             return usuarios;
         }
-        private HashMap<String, List<ListaSerializable>> getAllListas(SQLiteDatabase db, List<Usuario> usuarios){
+        private HashMap<String, List<ListaSerializable>> getAllListas(SQLiteDatabase db, List<Usuario> usuarios, int oldVersion){
             HashMap<String, List<ListaSerializable>> listas = new HashMap<String, List<ListaSerializable>>();
             for(Usuario usuario:usuarios) {
                 Cursor c = db.query(DATABASE_TABLE_LISTAS
@@ -202,19 +203,23 @@ public class DBAdapter {
             }
             return listas;
         }
-        private HashMap<String, List<ArticuloSerializable>> getAllArticulos(SQLiteDatabase db, HashMap<String, List<ListaSerializable>> listas){
+        private HashMap<String, List<ArticuloSerializable>> getAllArticulos(SQLiteDatabase db, HashMap<String, List<ListaSerializable>> listas, int oldVersion){
             HashMap<String, List<ArticuloSerializable>> articulos = new HashMap<String, List<ArticuloSerializable>>();
 
             Set<String> idUsuarios = listas.keySet();
             ArticuloSerializable a;
+            String[] camposOld;
+            if (oldVersion==7) camposOld = camposArticulo_7;
+            else camposOld = camposArticulo;
             for(String idUsuario:idUsuarios) {
                 for (ListaSerializable lista : listas.get(idUsuario)) {
                     Cursor c = db.query(DATABASE_TABLE_ARTICULOS
-                            , camposArticulo
+                            , camposOld
                             , DB_FKIDLISTA + "=?", new String[]{String.valueOf(lista.getId())}, null, null, null);
                     List<ArticuloSerializable> articulo = new ArrayList<ArticuloSerializable>();
                     while (c.moveToNext()) {
-                        a = new ArticuloSerializable(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3), c.getDouble(4), c.getInt(5));
+                        if (oldVersion==7) a = new ArticuloSerializable(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3), 0, 0);
+                        else a = new ArticuloSerializable(c.getInt(0), c.getString(1), c.getString(2), c.getInt(3), c.getDouble(4), c.getInt(5));
                         if ("0".equals(a.getCantidad())) a.setCantidad("");
                         articulo.add(a);
                     }
