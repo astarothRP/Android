@@ -24,7 +24,7 @@ import java.util.Set;
 public class DBAdapter {
     //constantes para BD y tablas
     private static final String DATABASE_NAME="ListaCompra";
-    private static final int DATABASE_VERSION=10;
+    private static final int DATABASE_VERSION=8;
     private static final String DATABASE_TABLE_USUARIOS="usuarios";
     private static final String DATABASE_TABLE_LISTAS="listas";
     private static final String DATABASE_TABLE_ARTICULOS="articulos";

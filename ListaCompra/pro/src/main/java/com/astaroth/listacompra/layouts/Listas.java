@@ -264,11 +264,11 @@ public class Listas extends ActionBarActivity {
                                     articuloHM = (HashMap<String, Object>) articuloO;
                                     if (articuloHM != null) {
                                         articulos.add(new ArticuloSerializable(((Long) articuloHM.get("id")).intValue()
-                                            , (String) articuloHM.get("descripcion")
-                                            , (String) articuloHM.get("cantidad")
-                                            , ((Long) articuloHM.get("fkIdLista")).intValue()
-                                            , (articuloHM.get("importe")==null?0:((Double) articuloHM.get("importe")).doubleValue())
-                                            , (articuloHM.get("marcado")==null?0:((Long) articuloHM.get("marcado")).intValue())
+                                                , (String) articuloHM.get("descripcion")
+                                                , (String) articuloHM.get("cantidad")
+                                                , ((Long) articuloHM.get("fkIdLista")).intValue()
+                                                , ((Double) articuloHM.get("importe")).doubleValue()
+                                                , ((Long) articuloHM.get("marcado")).intValue()
                                         ));
                                     }
                                 }
@@ -285,11 +285,11 @@ public class Listas extends ActionBarActivity {
                                         articuloHM = (HashMap<String, Object>) articulosHM.get(key);
                                         if (articuloHM != null) {
                                             articulos.add(new ArticuloSerializable(((Long) articuloHM.get("id")).intValue()
-                                                , (String) articuloHM.get("descripcion")
-                                                , (String) articuloHM.get("cantidad")
-                                                , ((Long) articuloHM.get("fkIdLista")).intValue()
-                                                , (articuloHM.get("importe")==null?0:((Double) articuloHM.get("importe")).doubleValue())
-                                                , (articuloHM.get("marcado")==null?0:((Long) articuloHM.get("marcado")).intValue())
+                                                    , (String) articuloHM.get("descripcion")
+                                                    , (String) articuloHM.get("cantidad")
+                                                    , ((Long) articuloHM.get("fkIdLista")).intValue()
+                                                    , ((Double) articuloHM.get("importe")).doubleValue()
+                                                    , ((Long) articuloHM.get("marcado")).intValue()
                                             ));
                                         }
                                     }
