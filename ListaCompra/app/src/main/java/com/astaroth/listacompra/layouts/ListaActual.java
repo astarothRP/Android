@@ -280,8 +280,6 @@ public class ListaActual extends ActionBarActivity {
                 Toast.makeText(getActivity(), R.string.error_articulo_obligatorio, Toast.LENGTH_LONG).show();
             } else if ("0".equals(cantidad.getText().toString())) {
                 Toast.makeText(getActivity(), R.string.error_cantidad_0, Toast.LENGTH_LONG).show();
-//            } else if (!StringUtil.isEntero(cantidad.getText().toString(), true)) {
-//                Toast.makeText(getActivity(), R.string.error_cantidad, Toast.LENGTH_LONG).show();
             } else {
                 if (articulo==null) articulo = new ArticuloSerializable();
                 //if (StringUtil.isNullOrEmpty(cantidad.getText().toString())) articulo.setCantidad(0);

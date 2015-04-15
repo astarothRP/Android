@@ -2,6 +2,7 @@ package com.astaroth.listacompra.layouts;
 
 import android.app.ActionBar;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.FragmentManager;
 import android.content.Context;
@@ -34,6 +35,7 @@ import android.widget.Toast;
 
 import com.astaroth.listacompra.R;
 import com.astaroth.listacompra.Utils.StringUtil;
+import com.astaroth.listacompra.Utils.SwipeListViewTouchListener;
 import com.astaroth.listacompra.beans.Articulo;
 import com.astaroth.listacompra.beans.ArticuloSerializable;
 import com.astaroth.listacompra.beans.Lista;
@@ -98,6 +100,22 @@ public class Listas extends ActionBarActivity {
                 abrirLista(listas.get(position));
             }
         });
+        //Deslizar item para borrarlo
+        SwipeListViewTouchListener touchListener =new SwipeListViewTouchListener(listaListas,new SwipeListViewTouchListener.OnSwipeCallback() {
+            @Override
+            public void onSwipeLeft(ListView listView, int [] reverseSortedPositions) {
+                //Aqui ponemos lo que hara el programa cuando deslizamos un item ha la izquierda
+                DialogFragment dialogoConfirmar = DialogoBorrado.newInstance(listas.get(reverseSortedPositions[0]).getId());
+                dialogoConfirmar.show(getFragmentManager(), "dialog");
+            }
+            @Override
+            public void onSwipeRight(ListView listView, int [] reverseSortedPositions) {
+                //Aqui ponemos lo que hara el programa cuando deslizamos un item ha la derecha
+                sendLista(listas.get(reverseSortedPositions[0]));
+            }
+        },false, false);
+        listaListas.setOnTouchListener(touchListener);
+        listaListas.setOnScrollListener(touchListener.makeScrollListener());
         abrirActual();
     }
     @Override
@@ -120,13 +138,7 @@ public class Listas extends ActionBarActivity {
                 dialogoSeleccion.show(getFragmentManager(), "listaEdit");
                 break;
             case R.id.action_bluetooth:
-                ListaSerializable toSend = listas.get(info.position);
-                List<ArticuloSerializable> toSendArt = getArticulos(toSend.getId());
-                if (toSendArt==null || toSendArt.size()==0) Toast.makeText(this,R.string.error_no_articulo_en_lista, Toast.LENGTH_LONG).show();
-                else {
-                    DialogFragment dialogoSend = DialogoLoginToSend.newInstance(new ListaArticuloSerializable(toSend, toSendArt));
-                    dialogoSend.show(getFragmentManager(), "listaSend");
-                }
+                sendLista(listas.get(info.position));
                 break;
         }
         return true;
@@ -200,7 +212,16 @@ public class Listas extends ActionBarActivity {
         }
     }
 
-    public void anadirLista(){
+    private void sendLista(ListaSerializable toSend){
+        List<ArticuloSerializable> toSendArt = getArticulos(toSend.getId());
+        if (toSendArt==null || toSendArt.size()==0) Toast.makeText(this,R.string.error_no_articulo_en_lista, Toast.LENGTH_LONG).show();
+        else {
+            DialogFragment dialogoSend = DialogoLoginToSend.newInstance(new ListaArticuloSerializable(toSend, toSendArt));
+            dialogoSend.show(getFragmentManager(), "listaSend");
+        }
+    }
+
+    private void anadirLista(){
         DialogFragment dialogoSeleccion = DialogoUsuario.newInstance(R.string.nueva_lista);
         dialogoSeleccion.show(getFragmentManager(), "dialog");
     }
@@ -449,6 +470,40 @@ public class Listas extends ActionBarActivity {
         intent.putExtra("usuario", usuario);
         intent.putExtra("lista", lista);
         startActivityForResult(intent, LISTA_DETALLE);
+    }
+    public static class DialogoBorrado extends DialogFragment {
+        int idLista;
+        static DialogoBorrado newInstance(int idLista) {
+            DialogoBorrado f = new DialogoBorrado();
+            Bundle args = new Bundle();
+            args.putSerializable("idLista", idLista);
+            f.setArguments(args);
+            return f;
+        }
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            idLista = getArguments().getInt("idLista");
+
+            return new AlertDialog.Builder(getActivity())
+                    .setMessage(R.string.conf_borrar_lista)
+                    .setPositiveButton(R.string.si,
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    deleteListaDialog();
+                                }
+                            }
+                    )
+                    .setNegativeButton(R.string.no,
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) { }
+                            }
+                    )
+                    .create();
+        }
+        public void deleteListaDialog(){
+            ((Listas)getActivity()).deleteLista(idLista);
+            ((Listas)getActivity()).setData();
+        }
     }
     public static class DialogoUsuario extends DialogFragment {
         EditText nombre;

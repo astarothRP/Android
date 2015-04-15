@@ -60,5 +60,6 @@
     <string name="title_activity_listas">Listas</string>
     <string name="title_activity_dispositivos_bluetooth">Dispositivos Bluetooth</string>
     <string name="conf_borrar_articulo">¿Confirma que desea borrar el artículo?</string>
+    <string name="conf_borrar_lista">¿Confirma que desea borrar la lista?</string>
 
 </resources>
