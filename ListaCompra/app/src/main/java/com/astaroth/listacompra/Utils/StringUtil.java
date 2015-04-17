@@ -1,4 +1,4 @@
-package com.astaroth.listacompra.Utils;
+package com.astaroth.listacompra.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

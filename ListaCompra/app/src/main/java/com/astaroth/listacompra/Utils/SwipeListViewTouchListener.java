@@ -1,4 +1,4 @@
-package com.astaroth.listacompra.Utils;
+package com.astaroth.listacompra.utils;
 
 /**
  * Created by Astaroth on 03/04/2015.

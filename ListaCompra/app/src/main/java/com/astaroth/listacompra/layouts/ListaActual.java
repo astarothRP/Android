@@ -5,11 +5,8 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -26,13 +23,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.astaroth.listacompra.R;
-import com.astaroth.listacompra.Utils.StringUtil;
-import com.astaroth.listacompra.Utils.SwipeListViewTouchListener;
-import com.astaroth.listacompra.beans.Articulo;
 import com.astaroth.listacompra.beans.ArticuloSerializable;
 import com.astaroth.listacompra.beans.ListaSerializable;
 import com.astaroth.listacompra.beans.Usuario;
 import com.astaroth.listacompra.datos.DBAdapter;
+import com.astaroth.listacompra.utils.StringUtil;
+import com.astaroth.listacompra.utils.SwipeListViewTouchListener;
 
 import java.util.List;
 

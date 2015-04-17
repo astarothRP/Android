@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.astaroth.listacompra.R;
-import com.astaroth.listacompra.Utils.StringUtil;
+import com.astaroth.listacompra.utils.StringUtil;
 import com.astaroth.listacompra.beans.Usuario;
 import com.astaroth.listacompra.datos.DBAdapter;
 
