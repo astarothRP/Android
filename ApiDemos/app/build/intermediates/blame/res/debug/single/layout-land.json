@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Volumes/Data/dev/personal/ApiDemos/app/build/intermediates/res/merged/debug/layout-land/fragment_arguments.xml",
+        "source": "/Volumes/Data/dev/personal/ApiDemos/app/src/main/res/layout-land/fragment_arguments.xml"
+    },
+    {
+        "merged": "/Volumes/Data/dev/personal/ApiDemos/app/build/intermediates/res/merged/debug/layout-land/grid_layout_2.xml",
+        "source": "/Volumes/Data/dev/personal/ApiDemos/app/src/main/res/layout-land/grid_layout_2.xml"
+    },
+    {
+        "merged": "/Volumes/Data/dev/personal/ApiDemos/app/build/intermediates/res/merged/debug/layout-land/fragment_layout.xml",
+        "source": "/Volumes/Data/dev/personal/ApiDemos/app/src/main/res/layout-land/fragment_layout.xml"
+    }
+]

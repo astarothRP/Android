@@ -1,0 +1,2961 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:22:1-3190:12
+	xmlns:android
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:22:11-69
+	package
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:23:5-39
+		INJECTED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:25:5-72
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:25:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:26:5-73
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:26:22-70
+uses-permission#android.permission.VIBRATE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:27:5-66
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:27:22-63
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:28:5-81
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:28:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:29:5-67
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:29:22-64
+uses-permission#android.permission.SET_WALLPAPER
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:30:5-72
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:30:22-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:31:5-81
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:31:22-78
+uses-permission#android.permission.SEND_SMS
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:32:5-67
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:32:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:33:5-70
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:33:22-67
+uses-permission#android.permission.RECEIVE_MMS
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:34:5-69
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:34:22-67
+uses-permission#android.permission.WRITE_SMS
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:35:5-67
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:35:22-65
+uses-permission#android.permission.READ_SMS
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:36:5-66
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:36:22-64
+uses-permission#android.permission.NFC
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:37:5-62
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:37:22-59
+uses-permission#android.permission.TRANSMIT_IR
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:38:5-70
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:38:22-67
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:39:5-74
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:39:22-72
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:43:5-71
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:43:22-68
+uses-permission#android.permission.CAMERA
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:47:5-65
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:47:22-62
+uses-feature#android.hardware.camera
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:48:5-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:48:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:49:5-95
+	android:required
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:49:68-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:49:19-67
+uses-sdk
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:51:2-53:35
+MERGED from [com.android.support:support-v4:23.0.1] /Volumes/Data/dev/personal/ApiDemos/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:53:3-32
+		INJECTED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:52:3-29
+		INJECTED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml
+application
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:55:2-3184:19
+MERGED from [com.android.support:support-v4:23.0.1] /Volumes/Data/dev/personal/ApiDemos/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+	android:supportsRtl
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:59:13-39
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:56:13-57
+	android:icon
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:57:13-53
+	android:hardwareAccelerated
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:58:13-47
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:55:15-49
+uses-library#com.example.will.never.exist
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:63:9-94
+	android:required
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:63:67-91
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:63:23-66
+uses-library#com.google.android.mms
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:64:3-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:64:17-54
+activity#com.example.android.apis.ApiDemos
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:66:9-72:20
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:66:19-42
+intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT+android.intent.category.LAUNCHER
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:67:13-71:29
+action#android.intent.action.MAIN
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:68:17-69
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:68:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:69:17-76
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:69:27-73
+category#android.intent.category.LAUNCHER
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:70:17-77
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:70:27-74
+activity#com.example.android.apis.app.HelloWorld
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:80:9-85:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:80:50-94
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:80:19-49
+intent-filter#android.intent.action.MAIN+android.intent.category.SAMPLE_CODE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:81:13-84:29
+category#android.intent.category.SAMPLE_CODE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:83:17-80
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:83:27-77
+activity#com.example.android.apis.app.DialogActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:87:9-94:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:88:17-56
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:89:17-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:87:19-53
+activity#com.example.android.apis.app.CustomDialogActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:96:9-103:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:97:17-63
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:98:17-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:96:19-59
+activity#com.example.android.apis.app.OverscanActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:105:9-113:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:106:17-58
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:107:17-79
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:108:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:105:19-55
+activity#com.example.android.apis.app.QuickContactsDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:115:8-121:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:116:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:115:18-55
+activity#com.example.android.apis.app.WallpaperActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:123:9-130:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:124:17-59
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:125:17-55
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:123:19-56
+activity#com.example.android.apis.app.TranslucentActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:132:9-139:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:133:17-61
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:134:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:132:19-58
+activity#com.example.android.apis.app.TranslucentBlurActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:141:9-148:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:142:17-66
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:143:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:141:19-62
+activity#com.example.android.apis.app.Animation
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:150:9-155:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:150:49-91
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:150:19-48
+activity#com.example.android.apis.app.SaveRestoreState
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:157:9-164:20
+	android:windowSoftInputMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:159:17-72
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:158:17-62
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:157:19-55
+activity#com.example.android.apis.app.PersistentState
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:166:9-173:20
+	android:windowSoftInputMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:168:17-72
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:167:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:166:19-54
+activity#com.example.android.apis.app.ActivityRecreate
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:175:9-182:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:176:17-58
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:177:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:175:19-55
+activity#com.example.android.apis.app.FinishAffinity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:184:9-192:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:185:17-65
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:187:17-57
+	android:taskAffinity
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:186:17-50
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:184:19-53
+activity#com.example.android.apis.app.SoftInputModes
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:194:9-200:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:195:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:194:19-53
+activity#com.example.android.apis.app.ReceiveResult
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:202:9-207:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:202:53-100
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:202:19-52
+activity#com.example.android.apis.app.SendResult
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:209:9-211:20
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:210:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:209:19-49
+activity#com.example.android.apis.app.Forwarding
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:213:9-218:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:213:50-93
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:213:19-49
+activity#com.example.android.apis.app.ForwardTarget
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:220:9-221:20
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:220:19-52
+activity#com.example.android.apis.app.RedirectEnter
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:223:9-228:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:223:53-94
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:223:19-52
+activity#com.example.android.apis.app.RedirectMain
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:230:9-231:20
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:230:19-51
+activity#com.example.android.apis.app.RedirectGetter
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:233:9-234:20
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:233:19-53
+activity#com.example.android.apis.app.CustomTitle
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:238:9-246:20
+	android:windowSoftInputMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:240:17-69
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:239:17-62
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:241:17-53
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:238:19-50
+activity#com.example.android.apis.app.ReorderOnLaunch
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:248:9-254:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:249:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:248:19-54
+activity#com.example.android.apis.app.RotationAnimation
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:256:9-262:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:257:17-68
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:256:19-56
+activity#com.example.android.apis.app.ReorderTwo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:264:9-52
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:264:19-49
+activity#com.example.android.apis.app.ReorderThree
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:265:9-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:265:19-51
+activity#com.example.android.apis.app.ReorderFour
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:266:9-53
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:266:19-50
+activity#com.example.android.apis.app.SetWallpaperActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:268:9-274:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:269:19-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:268:19-59
+activity#com.example.android.apis.app.ScreenOrientation
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:276:9-282:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:277:19-70
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:276:19-56
+activity#com.example.android.apis.app.PresentationActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:284:9-290:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:285:17-62
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:284:19-59
+activity#com.example.android.apis.app.PresentationWithMediaRouterActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:292:9-298:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:293:17-80
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:292:19-74
+activity#com.example.android.apis.app.SecureWindowActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:300:9-306:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:301:17-63
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:300:19-59
+activity#com.example.android.apis.app.SecureDialogActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:308:9-314:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:309:17-63
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:308:19-59
+activity#com.example.android.apis.app.SecureSurfaceViewActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:316:9-322:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:317:17-69
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:316:19-64
+activity#com.example.android.apis.app.FragmentAlertDialog
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:326:9-333:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:327:17-62
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:328:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:326:19-58
+activity#com.example.android.apis.app.FragmentArguments
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:335:9-342:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:336:17-59
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:337:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:335:19-56
+activity#com.example.android.apis.app.FragmentCustomAnimations
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:344:9-351:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:345:17-67
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:346:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:344:19-63
+activity#com.example.android.apis.app.FragmentHideShow
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:353:9-361:20
+	android:windowSoftInputMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:355:17-61
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:354:17-59
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:356:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:353:19-55
+activity#com.example.android.apis.app.FragmentContextMenu
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:363:9-370:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:364:17-62
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:365:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:363:19-58
+activity#com.example.android.apis.app.FragmentDialog
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:372:9-379:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:373:17-56
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:374:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:372:19-53
+activity#com.example.android.apis.app.FragmentDialogOrActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:381:9-388:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:382:17-68
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:383:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:381:19-63
+activity#com.example.android.apis.app.FragmentLayout
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:390:9-397:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:391:17-56
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:392:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:390:19-53
+activity#com.example.android.apis.app.FragmentLayout$DetailsActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:399:9-400:60
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:400:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:399:19-69
+activity#com.example.android.apis.app.FragmentListArray
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:402:9-409:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:403:17-60
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:404:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:402:19-56
+activity#com.example.android.apis.app.FragmentMenu
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:411:9-418:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:412:17-54
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:413:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:411:19-51
+activity#com.example.android.apis.app.FragmentNestingTabs
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:420:9-427:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:421:17-62
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:422:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:420:19-58
+activity#com.example.android.apis.app.FragmentRetainInstance
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:429:9-436:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:430:17-65
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:431:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:429:19-61
+activity#com.example.android.apis.app.FragmentReceiveResult
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:438:9-445:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:439:17-64
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:440:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:438:19-60
+activity#com.example.android.apis.app.FragmentStack
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:447:9-454:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:448:17-55
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:449:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:447:19-52
+activity#com.example.android.apis.app.FragmentTabs
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:456:9-463:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:457:17-54
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:458:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:456:19-51
+activity#com.example.android.apis.app.LoaderCursor
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:467:9-474:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:468:17-54
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:469:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:467:19-51
+activity#com.example.android.apis.app.LoaderCustom
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:476:9-483:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:477:17-54
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:478:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:476:19-51
+activity#com.example.android.apis.app.LoaderThrottle
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:486:9-493:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:487:17-56
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:488:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:486:19-53
+provider#com.example.android.apis.app.LoaderThrottle$SimpleProvider
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:494:9-496:62
+	android:authorities
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:495:19-84
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:496:19-59
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:494:19-68
+activity#com.example.android.apis.app.LoaderRetained
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:499:9-506:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:500:17-56
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:501:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:499:19-53
+activity#com.example.android.apis.app.Intents
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:510:9-515:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:510:47-87
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:510:19-46
+activity#com.example.android.apis.app.IntentActivityFlags
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:517:9-523:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:518:17-71
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:517:19-58
+service#com.example.android.apis.app.LocalService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:527:9-81
+	android:stopWithTask
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:527:51-78
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:527:18-50
+activity#com.example.android.apis.app.LocalServiceActivities$Controller
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:529:9-536:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:530:17-74
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:529:19-72
+	android:launchMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:531:17-47
+activity#com.example.android.apis.app.LocalServiceActivities$Binding
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:538:9-544:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:539:17-71
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:538:19-69
+service#com.example.android.apis.app.MessengerService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:547:9-548:45
+	android:process
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:548:17-42
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:547:18-54
+activity#com.example.android.apis.app.MessengerServiceActivities$Binding
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:551:9-557:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:552:17-75
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:551:19-73
+service#com.example.android.apis.app.RemoteService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:559:9-80
+	android:process
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:559:52-77
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:559:18-51
+activity#com.example.android.apis.app.RemoteService$Controller
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:561:9-568:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:562:17-75
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:561:19-63
+	android:launchMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:563:17-47
+activity#com.example.android.apis.app.RemoteService$Binding
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:570:9-576:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:571:17-72
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:570:19-60
+activity#com.example.android.apis.app.RemoteService$BindingOptions
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:578:9-584:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:579:17-80
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:578:19-67
+service#com.example.android.apis.app.ServiceStartArguments
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:586:9-62
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:586:18-59
+activity#com.example.android.apis.app.ServiceStartArguments$Controller
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:588:9-595:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:589:17-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:588:19-71
+	android:launchMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:590:17-47
+service#com.example.android.apis.app.ForegroundService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:597:9-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:597:18-55
+activity#com.example.android.apis.app.ForegroundService$Controller
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:599:9-606:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:600:17-79
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:599:19-67
+	android:launchMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:601:17-47
+activity#com.example.android.apis.app.IsolatedService$Controller
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:608:9-616:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:609:17-77
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:611:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:608:19-65
+	android:launchMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:610:17-47
+service#com.example.android.apis.app.IsolatedService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:618:9-619:60
+	android:isolatedProcess
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:618:54-84
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:619:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:618:18-53
+service#com.example.android.apis.app.IsolatedService2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:620:9-621:60
+	android:isolatedProcess
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:620:55-85
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:621:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:620:18-54
+receiver#com.example.android.apis.app.OneShotAlarm
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:625:9-80
+	android:process
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:625:52-77
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:625:19-51
+receiver#com.example.android.apis.app.RepeatingAlarm
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:627:9-82
+	android:process
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:627:54-79
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:627:19-53
+activity#com.example.android.apis.app.AlarmController
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:629:9-634:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:629:55-104
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:629:19-54
+service#com.example.android.apis.app.AlarmService_Service
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:636:9-87
+	android:process
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:636:59-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:636:18-58
+activity#com.example.android.apis.app.AlarmService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:638:9-643:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:638:52-98
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:638:19-51
+receiver#com.example.android.apis.app.DoNothing
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:647:9-648:68
+	android:process
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:648:17-41
+	android:exported
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:648:42-65
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:647:19-48
+activity#com.example.android.apis.accessibility.ClockBackActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:654:9-660:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:655:13-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:654:19-66
+service#com.example.android.apis.accessibility.ClockBackService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:662:9-668:19
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:663:13-64
+	android:permission
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:664:13-79
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:662:18-64
+intent-filter#android.accessibilityservice.AccessibilityService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:665:13-667:29
+action#android.accessibilityservice.AccessibilityService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:666:17-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:666:25-89
+activity#com.example.android.apis.accessibility.TaskListActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:670:9-677:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:671:19-69
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:672:19-66
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:670:19-65
+service#com.example.android.apis.accessibility.TaskBackService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:679:9-689:19
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:680:18-74
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:681:18-65
+	android:permission
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:682:18-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:679:18-63
+meta-data#android.accessibilityservice
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:686:13-688:58
+	android:resource
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:688:17-55
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:687:17-60
+activity#com.example.android.apis.accessibility.CustomViewAccessibilityActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:691:9-698:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:692:19-68
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:693:19-66
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:691:19-80
+activity#com.example.android.apis.app.LocalSample
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:702:9-707:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:702:51-96
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:702:19-50
+intent-filter#android.intent.action.MAIN
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:703:13-706:29
+activity#com.example.android.apis.app.ContactsFilter
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:709:9-714:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:709:54-102
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:709:19-53
+activity#com.example.android.apis.app.NotifyWithText
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:719:9-724:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:719:54-101
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:719:19-53
+activity#com.example.android.apis.app.IncomingMessage
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:726:9-732:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:727:17-65
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:726:19-54
+activity#com.example.android.apis.app.IncomingMessageView
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:734:9-736:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:735:17-69
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:734:19-58
+activity#com.example.android.apis.app.IncomingMessageInterstitial
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:739:9-745:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:740:17-50
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:741:17-58
+	android:excludeFromRecents
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:744:17-50
+	android:taskAffinity
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:743:17-40
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:739:19-66
+	android:launchMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:742:17-48
+activity#com.example.android.apis.app.NotificationDisplay
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:752:9-757:20
+	android:noHistory
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:756:17-41
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:753:17-57
+	android:excludeFromRecents
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:755:17-50
+	android:taskAffinity
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:754:17-40
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:752:19-58
+activity#com.example.android.apis.app.StatusBarNotifications
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:759:9-766:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:760:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:759:19-61
+	android:launchMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:761:17-47
+service#com.example.android.apis.app.NotifyingService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:768:9-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:768:18-54
+activity#com.example.android.apis.app.NotifyingController
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:770:9-775:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:770:59-120
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:770:19-58
+activity#com.example.android.apis.app.AlertDialogSamples
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:778:9-783:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:778:58-103
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:778:19-57
+activity#com.example.android.apis.app.SearchInvoke
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:792:9-811:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:793:19-56
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:792:19-51
+meta-data#android.app.default_searchable
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:801:13-802:66
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:801:24-69
+	android:value
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:802:24-63
+activity#com.example.android.apis.app.SearchQueryResults
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:816:9-835:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:817:19-63
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:816:19-57
+intent-filter#android.intent.action.SEARCH+android.intent.category.DEFAULT
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:825:13-828:29
+action#android.intent.action.SEARCH
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:826:17-71
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:826:25-68
+meta-data#android.app.searchable
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:833:13-834:61
+	android:resource
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:834:24-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:833:24-61
+provider#com.example.android.apis.app.SearchSuggestionSampleProvider
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:840:9-841:87
+	android:authorities
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:841:19-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:840:19-69
+activity#com.example.android.apis.app.LauncherShortcuts
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:866:9-873:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:867:19-52
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:866:19-56
+activity-alias#com.example.android.apis.app.CreateShortcuts
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:879:9-889:26
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:881:13-53
+	android:targetActivity
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:880:13-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:879:25-60
+intent-filter#android.intent.action.CREATE_SHORTCUT+android.intent.category.DEFAULT
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:884:13-887:29
+action#android.intent.action.CREATE_SHORTCUT
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:885:17-80
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:885:25-77
+activity#com.example.android.apis.app.MenuInflateFromXml
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:893:9-898:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:893:58-101
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:893:19-57
+activity#com.example.android.apis.app.DeviceAdminSample
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:902:9-908:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:903:17-69
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:902:19-56
+receiver#com.example.android.apis.app.DeviceAdminSample$DeviceAdminSampleReceiver
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:911:9-920:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:912:17-60
+	android:description
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:913:17-78
+	android:permission
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:914:17-74
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:911:19-82
+meta-data#android.app.device_admin
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:915:13-916:70
+	android:resource
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:916:24-67
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:915:24-63
+intent-filter#android.app.action.DEVICE_ADMIN_ENABLED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:917:13-919:29
+action#android.app.action.DEVICE_ADMIN_ENABLED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:918:17-82
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:918:25-79
+activity#com.example.android.apis.app.VoiceRecognition
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:925:9-930:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:925:56-97
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:925:19-55
+activity#com.example.android.apis.app.TextToSpeechActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:934:9-939:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:934:60-98
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:934:19-59
+activity#com.example.android.apis.app.ActionBarMechanics
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:942:9-949:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:943:17-61
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:944:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:942:19-57
+activity#com.example.android.apis.app.ActionBarUsage
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:951:9-958:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:952:17-57
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:953:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:951:19-53
+activity#com.example.android.apis.app.ActionBarDisplayOptions
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:960:9-968:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:961:17-67
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:963:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:960:19-62
+	android:logo
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:962:17-61
+activity#com.example.android.apis.app.ActionBarTabs
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:970:9-977:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:971:17-56
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:972:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:970:19-52
+activity#com.example.android.apis.app.ActionBarSettingsActionProviderActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:979:9-986:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:980:17-76
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:981:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:979:19-78
+activity#com.example.android.apis.app.ActionBarShareActionProviderActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:988:9-995:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:989:17-73
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:990:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:988:19-75
+activity#com.example.android.apis.app.ActionBarNavigation
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:997:9-1006:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:998:17-62
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:999:17-57
+	android:taskAffinity
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1000:17-55
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:997:19-58
+	android:launchMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1001:17-48
+activity#com.example.android.apis.app.ActionBarNavigationTarget
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1008:9-1013:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1009:17-69
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1010:17-57
+	android:taskAffinity
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1012:17-55
+	android:parentActivityName
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1011:17-70
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1008:19-64
+activity#com.example.android.apis.app.PrintBitmap
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1015:9-1022:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1016:17-53
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1017:17-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1015:19-50
+activity#com.example.android.apis.app.PrintHtmlFromScreen
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1024:9-1031:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1025:17-63
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1026:17-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1024:19-58
+activity#com.example.android.apis.app.PrintHtmlOffScreen
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1033:9-1040:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1034:17-62
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1035:17-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1033:19-57
+activity#com.example.android.apis.app.PrintCustomContent
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1042:9-1049:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1043:17-61
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1044:17-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1042:19-57
+receiver#com.example.android.apis.app.AppUpdateReceiver
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1054:9-1058:20
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1054:19-56
+intent-filter#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1055:13-1057:29
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1056:17-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1056:25-81
+receiver#com.example.android.apis.app.AppUpdateSspReceiver
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1061:9-1066:20
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1061:19-59
+intent-filter#android.intent.action.PACKAGE_REPLACED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1062:13-1065:29
+action#android.intent.action.PACKAGE_REPLACED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1063:17-81
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1063:25-78
+data
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1064:17-89
+	android:ssp
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1064:48-86
+	android:scheme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1064:23-47
+activity#com.example.android.apis.preference.FragmentPreferences
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1072:9-1079:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1073:17-61
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1074:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1072:19-65
+activity#com.example.android.apis.preference.PreferenceWithHeaders
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1081:9-1088:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1082:17-64
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1083:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1081:19-67
+activity#com.example.android.apis.preference.PreferencesFromXml
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1090:9-1096:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1091:17-61
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1090:19-64
+activity#com.example.android.apis.preference.PreferencesFromCode
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1098:9-1104:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1099:17-62
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1098:19-65
+activity#com.example.android.apis.preference.AdvancedPreferences
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1106:9-1112:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1107:17-61
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1106:19-65
+activity#com.example.android.apis.preference.LaunchingPreferences
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1114:9-1120:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1115:17-62
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1114:19-66
+activity#com.example.android.apis.preference.PreferenceDependencies
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1122:9-1128:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1123:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1122:19-68
+activity#com.example.android.apis.preference.DefaultValues
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1130:9-1135:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1130:60-98
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1130:19-59
+activity#com.example.android.apis.preference.SwitchPreference
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1137:9-1144:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1138:17-58
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1139:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1137:19-62
+activity#com.example.android.apis.content.ClipboardSample
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1150:9-1157:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1151:17-59
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1152:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1150:19-58
+activity#com.example.android.apis.content.ExternalStorage
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1159:9-1165:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1159:59-108
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1159:19-58
+intent-filter#android.intent.action.MAIN+android.intent.category.EMBED+android.intent.category.SAMPLE_CODE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1160:13-1164:29
+category#android.intent.category.EMBED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1163:17-74
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1163:27-71
+activity#com.example.android.apis.content.StyledText
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1167:9-1173:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1167:54-98
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1167:19-53
+activity#com.example.android.apis.content.TextUndoActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1175:9-1181:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1175:60-102
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1175:19-59
+activity#com.example.android.apis.content.ResourcesLayoutReference
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1183:9-1190:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1184:17-76
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1183:19-67
+activity#com.example.android.apis.content.ResourcesWidthAndHeight
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1192:9-1200:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1193:17-76
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1194:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1192:19-66
+activity#com.example.android.apis.content.ResourcesSmallestWidth
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1202:9-1210:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1203:17-74
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1204:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1202:19-65
+activity#com.example.android.apis.content.ReadAsset
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1212:9-1218:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1212:53-96
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1212:19-52
+activity#com.example.android.apis.content.ResourcesSample
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1220:9-1225:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1220:59-101
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1220:19-58
+activity#com.example.android.apis.content.PickContact
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1227:9-1232:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1227:55-100
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1227:19-54
+activity#com.example.android.apis.content.ShareContent
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1234:9-1239:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1234:56-102
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1234:19-55
+activity#com.example.android.apis.content.ChangedContacts
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1241:9-1246:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1241:59-107
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1241:19-58
+activity#com.example.android.apis.content.InstallApk
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1248:9-1254:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1248:54-98
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1249:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1248:19-53
+activity#com.example.android.apis.content.DocumentsSample
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1256:9-1263:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1257:17-59
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1258:17-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1256:19-58
+provider#com.example.android.apis.content.FileProvider
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1265:9-1269:65
+	android:grantUriPermissions
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1267:19-53
+	android:exported
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1268:19-43
+	android:authorities
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1266:19-86
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1269:19-62
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1265:19-55
+activity#com.example.android.apis.content.ProcessTextLauncher
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1271:9-1277:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1272:17-59
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1271:19-62
+activity#com.example.android.apis.content.ProcessText
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1278:9-1284:20
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1278:19-54
+intent-filter#android.intent.action.PROCESS_TEXT+android.intent.category.DEFAULT
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1279:13-1283:29
+action#android.intent.action.PROCESS_TEXT
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1280:17-76
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1280:25-74
+activity#com.example.android.apis.hardware.ConsumerIr
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1290:9-1295:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1290:55-91
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1290:19-54
+activity#com.example.android.apis.os.MorseCode
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1301:9-1306:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1301:48-77
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1301:19-47
+activity#com.example.android.apis.os.TriggerSensors
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1308:9-1313:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1308:53-86
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1308:19-52
+activity#com.example.android.apis.os.RotationVectorDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1315:9-1320:20
+	android:screenOrientation
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1315:93-129
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1315:57-91
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1315:19-56
+activity#com.example.android.apis.os.SmsMessagingDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1322:9-1333:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1322:55-87
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1322:19-54
+intent-filter#android.intent.action.SENDTO+android.intent.category.DEFAULT
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1327:13-1332:29
+action#android.intent.action.SENDTO
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1328:17-71
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1328:25-68
+activity#com.example.android.apis.os.MmsMessagingDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1335:9-1346:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1335:55-87
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1335:19-54
+activity#com.example.android.apis.os.SmsReceivedDialog
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1348:9-1350:57
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1349:19-78
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1348:19-55
+	android:launchMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1350:19-54
+receiver#com.example.android.apis.os.SmsMessageReceiver
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1352:9-1360:20
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1352:57-80
+	android:permission
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1353:17-70
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1352:19-56
+intent-filter#android.provider.Telephony.SMS_RECEIVED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1354:13-1356:29
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1355:17-82
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1355:25-79
+intent-filter#android.provider.Telephony.SMS_DELIVER
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1357:13-1359:29
+action#android.provider.Telephony.SMS_DELIVER
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1358:17-81
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1358:25-78
+receiver#com.example.android.apis.os.MmsWapPushReceiver
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1362:9-1372:20
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1362:57-80
+	android:permission
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1363:19-77
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1362:19-56
+intent-filter#android.provider.Telephony.WAP_PUSH_RECEIVED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1364:13-1367:29
+action#android.provider.Telephony.WAP_PUSH_RECEIVED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1365:17-87
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1365:25-84
+intent-filter#android.provider.Telephony.WAP_PUSH_DELIVER
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1368:13-1371:29
+action#android.provider.Telephony.WAP_PUSH_DELIVER
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1369:17-86
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1369:25-83
+service#com.example.android.apis.os.HeadlessSmsSendService
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1374:9-1385:19
+	android:exported
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1376:18-41
+	android:permission
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1375:18-82
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1374:18-59
+intent-filter#android.intent.action.RESPOND_VIA_MESSAGE+android.intent.category.DEFAULT
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1377:13-1384:29
+action#android.intent.action.RESPOND_VIA_MESSAGE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1378:17-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1378:25-81
+provider#com.example.android.apis.os.MmsFileProvider
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1387:9-1391:46
+	android:grantUriPermissions
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1390:19-53
+	android:exported
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1391:19-43
+	android:authorities
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1388:19-84
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1389:19-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1387:19-53
+activity#com.example.android.apis.animation.ActivityTransition
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1397:9-1405:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1398:17-62
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1400:17-63
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1399:17-56
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1397:19-63
+activity#com.example.android.apis.animation.ActivityTransitionDetails
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1407:9-1414:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1408:17-71
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1410:17-63
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1409:17-56
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1407:19-70
+activity#com.example.android.apis.animation.AnimationLoading
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1416:9-1423:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1417:17-50
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1418:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1416:19-61
+activity#com.example.android.apis.animation.AnimationCloning
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1425:9-1432:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1426:17-50
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1427:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1425:19-61
+activity#com.example.android.apis.animation.AnimationSeeking
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1434:9-1441:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1435:17-50
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1436:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1434:19-61
+activity#com.example.android.apis.animation.AnimatorEvents
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1443:9-1450:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1444:17-49
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1445:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1443:19-59
+activity#com.example.android.apis.animation.BouncingBalls
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1452:9-1459:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1453:17-57
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1454:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1452:19-58
+activity#com.example.android.apis.animation.CustomEvaluator
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1461:9-1468:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1462:17-59
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1463:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1461:19-60
+activity#com.example.android.apis.animation.ListFlipper
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1470:9-1477:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1471:17-52
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1472:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1470:19-56
+activity#com.example.android.apis.animation.ReversingAnimation
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1479:9-1486:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1480:17-52
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1481:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1479:19-63
+activity#com.example.android.apis.animation.MultiPropertyAnimation
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1488:9-1495:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1489:17-62
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1490:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1488:19-67
+activity#com.example.android.apis.animation.LayoutAnimations
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1497:9-1504:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1498:17-60
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1499:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1497:19-61
+activity#com.example.android.apis.animation.LayoutAnimationsHideShow
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1506:9-1513:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1507:17-63
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1508:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1506:19-69
+activity#com.example.android.apis.animation.LayoutAnimationsByDefault
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1515:9-1522:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1516:19-70
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1517:19-59
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1515:19-70
+activity#com.example.android.apis.animation.Transitions
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1524:9-1531:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1525:19-63
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1526:19-59
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1524:19-56
+activity#com.example.android.apis.animation.PathAnimations
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1533:9-1540:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1534:19-60
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1535:19-59
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1533:19-59
+activity#com.example.android.apis.animation.Transition3d
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1546:9-1551:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1546:58-103
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1546:19-57
+activity#com.example.android.apis.view.ChronometerDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1557:9-1562:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1557:56-89
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1557:19-55
+activity#com.example.android.apis.view.WebView1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1563:9-1568:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1563:49-78
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1563:19-48
+activity#com.example.android.apis.view.RelativeLayout1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1570:9-1575:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1570:56-112
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1570:19-55
+activity#com.example.android.apis.view.RelativeLayout2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1577:9-1582:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1577:56-115
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1577:19-55
+activity#com.example.android.apis.view.LinearLayout1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1584:9-1590:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1585:19-74
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1584:19-53
+activity#com.example.android.apis.view.LinearLayout2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1592:9-1598:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1593:19-88
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1592:19-53
+activity#com.example.android.apis.view.LinearLayout3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1600:9-1606:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1601:19-83
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1600:19-53
+activity#com.example.android.apis.view.LinearLayout4
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1608:9-1614:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1609:19-76
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1608:19-53
+activity#com.example.android.apis.view.LinearLayout5
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1616:9-1622:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1617:19-77
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1616:19-53
+activity#com.example.android.apis.view.LinearLayout6
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1624:9-1630:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1625:19-78
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1624:19-53
+activity#com.example.android.apis.view.LinearLayout7
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1632:9-1638:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1633:19-77
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1632:19-53
+activity#com.example.android.apis.view.LinearLayout8
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1640:9-1646:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1641:19-73
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1640:19-53
+activity#com.example.android.apis.view.LinearLayout9
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1648:9-1654:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1649:19-79
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1648:19-53
+activity#com.example.android.apis.view.LinearLayout10
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1656:9-1662:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1657:19-82
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1656:19-54
+activity#com.example.android.apis.view.CustomLayoutActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1664:9-1670:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1665:19-61
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1664:19-60
+activity#com.example.android.apis.view.RadioGroup1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1672:9-1677:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1672:52-85
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1672:19-51
+activity#com.example.android.apis.view.ScrollView1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1679:9-1684:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1679:52-101
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1679:19-51
+activity#com.example.android.apis.view.ScrollView2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1686:9-1691:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1686:52-100
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1686:19-51
+activity#com.example.android.apis.view.HorizontalScrollView1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1693:9-1698:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1693:62-112
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1693:19-61
+activity#com.example.android.apis.view.Tabs1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1700:9-1705:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1700:46-89
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1700:19-45
+activity#com.example.android.apis.view.Tabs2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1707:9-1712:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1707:46-94
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1707:19-45
+activity#com.example.android.apis.view.Tabs3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1714:9-1719:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1714:46-93
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1714:19-45
+activity#com.example.android.apis.view.Tabs4
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1721:9-1727:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1721:46-90
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1722:19-55
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1721:19-45
+activity#com.example.android.apis.view.Tabs5
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1729:9-1734:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1729:46-86
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1729:19-45
+activity#com.example.android.apis.view.Tabs6
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1736:9-1741:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1736:46-89
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1736:19-45
+activity#com.example.android.apis.view.InternalSelectionScroll
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1743:9-1748:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1743:64-126
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1743:19-63
+activity#com.example.android.apis.view.TableLayout1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1750:9-1755:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1750:53-104
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1750:19-52
+activity#com.example.android.apis.view.TableLayout2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1757:9-1762:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1757:53-110
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1757:19-52
+activity#com.example.android.apis.view.TableLayout3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1764:9-1769:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1764:53-111
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1764:19-52
+activity#com.example.android.apis.view.TableLayout4
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1771:9-1776:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1771:53-110
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1771:19-52
+activity#com.example.android.apis.view.TableLayout5
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1778:9-1783:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1778:53-123
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1778:19-52
+activity#com.example.android.apis.view.TableLayout6
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1785:9-1790:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1785:53-128
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1785:19-52
+activity#com.example.android.apis.view.TableLayout7
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1792:9-1797:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1792:53-114
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1792:19-52
+activity#com.example.android.apis.view.TableLayout8
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1799:9-1804:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1799:53-113
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1799:19-52
+activity#com.example.android.apis.view.TableLayout9
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1806:9-1811:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1806:53-112
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1806:19-52
+activity#com.example.android.apis.view.TableLayout10
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1813:9-1818:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1813:54-111
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1813:19-53
+activity#com.example.android.apis.view.TableLayout11
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1820:9-1825:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1820:54-107
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1820:19-53
+activity#com.example.android.apis.view.TableLayout12
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1827:9-1832:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1827:54-113
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1827:19-53
+activity#com.example.android.apis.view.GridLayout1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1834:9-1839:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1834:52-107
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1834:19-51
+activity#com.example.android.apis.view.GridLayout2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1841:9-1846:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1841:52-106
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1841:19-51
+activity#com.example.android.apis.view.GridLayout3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1848:9-1853:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1848:52-107
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1848:19-51
+activity#com.example.android.apis.view.Baseline1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1855:9-1860:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1855:50-95
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1855:19-49
+activity#com.example.android.apis.view.Baseline2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1862:9-1867:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1862:50-98
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1862:19-49
+activity#com.example.android.apis.view.Baseline3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1869:9-1874:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1869:50-98
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1869:19-49
+activity#com.example.android.apis.view.Baseline4
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1876:9-1881:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1876:50-102
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1876:19-49
+activity#com.example.android.apis.view.Baseline6
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1883:9-1888:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1883:50-102
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1883:19-49
+activity#com.example.android.apis.view.Baseline7
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1890:9-1895:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1890:50-100
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1890:19-49
+activity#com.example.android.apis.view.BaselineNested1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1897:9-1902:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1897:56-111
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1897:19-55
+activity#com.example.android.apis.view.BaselineNested2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1904:9-1909:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1904:56-111
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1904:19-55
+activity#com.example.android.apis.view.BaselineNested3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1911:9-1916:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1911:56-111
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1911:19-55
+activity#com.example.android.apis.view.ScrollBar1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1918:9-1923:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1918:51-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1918:19-50
+activity#com.example.android.apis.view.ScrollBar2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1925:9-1930:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1925:51-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1925:19-50
+activity#com.example.android.apis.view.ScrollBar3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1932:9-1937:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1932:51-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1932:19-50
+activity#com.example.android.apis.view.Visibility1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1939:9-1944:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1939:52-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1939:19-51
+activity#com.example.android.apis.view.List1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1946:9-1951:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1946:46-83
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1946:19-45
+activity#com.example.android.apis.view.List2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1953:9-1958:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1953:46-93
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1953:19-45
+activity#com.example.android.apis.view.List3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1960:9-1965:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1960:46-93
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1960:19-45
+activity#com.example.android.apis.view.List4
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1967:9-1972:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1967:46-89
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1967:19-45
+activity#com.example.android.apis.view.List5
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1974:9-1979:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1974:46-88
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1974:19-45
+activity#com.example.android.apis.view.List6
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1981:9-1986:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1981:46-99
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1981:19-45
+activity#com.example.android.apis.view.List7
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1988:9-1993:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1988:46-93
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1988:19-45
+activity#com.example.android.apis.view.List8
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1995:9-2000:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1995:46-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:1995:19-45
+activity#com.example.android.apis.view.List9
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2002:9-2007:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2002:46-93
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2002:19-45
+activity#com.example.android.apis.view.List10
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2009:9-2014:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2009:47-97
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2009:19-46
+activity#com.example.android.apis.view.List11
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2016:9-2021:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2016:47-99
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2016:19-46
+activity#com.example.android.apis.view.List12
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2023:9-2028:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2023:47-89
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2023:19-46
+activity#com.example.android.apis.view.List13
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2030:9-2035:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2030:47-91
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2030:19-46
+activity#com.example.android.apis.view.List14
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2037:9-2042:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2037:47-96
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2037:19-46
+activity#com.example.android.apis.view.List15
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2044:9-2049:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2044:47-93
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2044:19-46
+activity#com.example.android.apis.view.List16
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2051:9-2056:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2051:47-100
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2051:19-46
+activity#com.example.android.apis.view.List17
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2058:9-2063:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2058:47-93
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2058:19-46
+activity#com.example.android.apis.view.ExpandableList1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2065:9-2070:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2065:56-112
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2065:19-55
+activity#com.example.android.apis.view.ExpandableList2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2072:9-2077:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2072:56-113
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2072:19-55
+activity#com.example.android.apis.view.ExpandableList3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2079:9-2084:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2079:56-112
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2079:19-55
+activity#com.example.android.apis.view.CustomView1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2086:9-2093:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2087:17-45
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2088:17-59
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2086:19-51
+activity#com.example.android.apis.view.Spinner1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2095:9-2100:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2095:49-78
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2095:19-48
+activity#com.example.android.apis.view.Grid1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2102:9-2107:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2102:46-85
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2102:19-45
+activity#com.example.android.apis.view.Grid2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2109:9-2114:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2109:46-86
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2109:19-45
+activity#com.example.android.apis.view.Grid3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2116:9-2122:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2117:19-63
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2116:19-45
+activity#com.example.android.apis.view.ImageView1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2124:9-2130:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2125:17-48
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2124:19-50
+activity#com.example.android.apis.view.EditTextDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2132:9-2138:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2133:19-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2132:19-52
+activity#com.example.android.apis.text.Link
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2140:9-2146:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2141:19-53
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2140:19-44
+activity#com.example.android.apis.text.LogTextBox1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2148:9-2154:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2149:19-56
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2148:19-51
+activity#com.example.android.apis.text.Marquee
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2156:9-2162:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2157:19-53
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2156:19-47
+activity#com.example.android.apis.view.TextClockDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2164:9-2170:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2165:19-55
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2164:19-53
+activity#com.example.android.apis.view.TextSwitcher1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2172:9-2178:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2173:17-56
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2172:19-53
+activity#com.example.android.apis.view.TextViewDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2180:9-2186:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2181:19-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2180:19-52
+activity#com.example.android.apis.view.ImageButton1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2188:9-2194:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2189:17-50
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2188:19-52
+activity#com.example.android.apis.view.Animation1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2196:9-2201:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2196:51-88
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2196:19-50
+activity#com.example.android.apis.view.Animation2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2203:9-2208:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2203:51-87
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2203:19-50
+activity#com.example.android.apis.view.Animation3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2210:9-2215:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2210:51-96
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2210:19-50
+activity#com.example.android.apis.view.LayoutAnimation1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2217:9-2222:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2217:57-108
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2217:19-56
+activity#com.example.android.apis.view.LayoutAnimation2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2224:9-2229:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2224:57-111
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2224:19-56
+activity#com.example.android.apis.view.LayoutAnimation3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2231:9-2236:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2231:57-112
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2231:19-56
+activity#com.example.android.apis.view.LayoutAnimation4
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2238:9-2243:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2238:57-108
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2238:19-56
+activity#com.example.android.apis.view.LayoutAnimation5
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2245:9-2250:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2245:57-113
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2245:19-56
+activity#com.example.android.apis.view.LayoutAnimation6
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2252:9-2257:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2252:57-109
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2252:19-56
+activity#com.example.android.apis.view.LayoutAnimation7
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2259:9-2264:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2259:57-116
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2259:19-56
+activity#com.example.android.apis.view.Controls1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2266:9-2273:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2267:19-64
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2268:19-61
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2266:19-49
+activity#com.example.android.apis.view.Controls2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2275:9-2282:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2276:19-63
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2277:19-55
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2275:19-49
+activity#com.example.android.apis.view.Controls3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2284:9-2292:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2285:19-69
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2286:19-66
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2287:19-59
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2284:19-49
+activity#com.example.android.apis.view.Controls4
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2294:9-2302:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2295:19-68
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2296:19-60
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2297:19-59
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2294:19-49
+activity#com.example.android.apis.view.Controls5
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2304:9-2312:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2305:19-73
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2306:19-70
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2307:19-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2304:19-49
+activity#com.example.android.apis.view.Controls6
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2314:9-2322:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2315:19-72
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2316:19-64
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2317:19-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2314:19-49
+activity#com.example.android.apis.view.Controls7
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2324:9-2331:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2325:19-65
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2326:19-53
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2324:19-49
+activity#com.example.android.apis.view.Controls8
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2333:9-2340:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2334:19-73
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2335:19-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2333:19-49
+activity#com.example.android.apis.view.Controls9
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2342:9-2348:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2343:19-66
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2342:19-49
+activity#com.example.android.apis.view.Buttons1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2350:9-2356:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2351:17-46
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2350:19-48
+activity#com.example.android.apis.view.AutoComplete1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2358:9-2363:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2358:54-103
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2358:19-53
+activity#com.example.android.apis.view.AutoComplete2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2365:9-2370:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2365:54-106
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2365:19-53
+activity#com.example.android.apis.view.AutoComplete3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2372:9-2377:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2372:54-99
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2372:19-53
+activity#com.example.android.apis.view.AutoComplete4
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2379:9-2384:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2379:54-101
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2379:19-53
+activity#com.example.android.apis.view.AutoComplete5
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2386:9-2391:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2386:54-111
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2386:19-53
+activity#com.example.android.apis.view.AutoComplete6
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2393:9-2398:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2393:54-107
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2393:19-53
+activity#com.example.android.apis.view.ProgressBar1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2400:9-2405:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2400:53-102
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2400:19-52
+activity#com.example.android.apis.view.ProgressBar2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2407:9-2412:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2407:53-97
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2407:19-52
+activity#com.example.android.apis.view.ProgressBar3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2414:9-2419:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2414:53-98
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2414:19-52
+activity#com.example.android.apis.view.ProgressBar4
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2421:9-2426:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2421:53-103
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2421:19-52
+activity#com.example.android.apis.view.SeekBar1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2428:9-2433:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2428:49-79
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2428:19-48
+activity#com.example.android.apis.view.RatingBar1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2435:9-2440:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2435:51-83
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2435:19-50
+activity#com.example.android.apis.view.Focus1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2442:9-2447:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2442:47-86
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2442:19-46
+activity#com.example.android.apis.view.Focus2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2449:9-2454:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2449:47-88
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2449:19-46
+activity#com.example.android.apis.view.Focus3
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2456:9-2461:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2456:47-86
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2456:19-46
+activity#com.example.android.apis.view.InternalSelectionFocus
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2463:9-2468:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2463:63-112
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2463:19-62
+activity#com.example.android.apis.view.Focus5
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2470:9-2475:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2470:47-100
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2470:19-46
+activity#com.example.android.apis.view.WindowFocusObserver
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2477:9-2483:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2478:19-71
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2477:19-59
+activity#com.example.android.apis.view.DateWidgets1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2485:9-2490:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2485:53-97
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2485:19-52
+activity#com.example.android.apis.view.DateWidgets2
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2492:9-2497:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2492:53-97
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2492:19-52
+activity#com.example.android.apis.view.PopupMenu1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2499:9-2504:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2499:51-83
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2499:19-50
+activity#com.example.android.apis.view.SearchViewActionBar
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2506:9-2514:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2506:60-104
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2507:17-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2506:19-59
+activity#com.example.android.apis.view.SearchViewAlwaysVisible
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2516:9-2524:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2516:64-113
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2517:17-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2516:19-63
+activity#com.example.android.apis.view.SearchViewFilterMode
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2526:9-2532:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2526:61-101
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2527:17-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2526:19-60
+activity#com.example.android.apis.view.RotatingButton
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2534:9-2539:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2534:55-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2534:19-54
+activity#com.example.android.apis.view.SecureView
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2541:9-2546:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2541:51-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2541:19-50
+activity#com.example.android.apis.view.SplitTouchView
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2548:9-2553:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2548:55-107
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2548:19-54
+activity#com.example.android.apis.view.DragAndDropDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2555:9-2563:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2556:17-52
+	android:hardwareAccelerated
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2557:17-52
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2558:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2555:19-55
+activity#com.example.android.apis.view.GameControllerInput
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2565:9-2570:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2565:60-103
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2565:19-59
+activity#com.example.android.apis.view.Hover
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2572:9-2577:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2572:46-80
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2572:19-45
+activity#com.example.android.apis.view.SystemUIModes
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2579:9-2587:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2580:17-75
+	android:uiOptions
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2581:17-61
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2582:17-60
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2579:19-53
+activity#com.example.android.apis.view.SystemUIModesOverlay
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2589:9-2597:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2590:17-83
+	android:uiOptions
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2591:17-61
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2592:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2589:19-60
+activity#com.example.android.apis.view.ContentBrowserActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2599:9-2608:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2600:17-75
+	android:uiOptions
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2602:17-61
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2601:17-78
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2603:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2599:19-62
+activity#com.example.android.apis.view.ContentBrowserNavActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2610:9-2619:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2611:17-83
+	android:uiOptions
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2613:17-61
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2612:17-78
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2614:17-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2610:19-65
+activity#com.example.android.apis.view.VideoPlayerActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2621:9-2630:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2622:17-72
+	android:uiOptions
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2624:17-61
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2623:17-58
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2625:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2621:19-59
+activity#com.example.android.apis.view.TranslucentBarsActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2632:9-2640:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2633:17-76
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2634:17-87
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2635:17-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2632:19-63
+activity#com.example.android.apis.view.GameActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2642:9-2650:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2643:17-64
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2644:17-70
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2645:17-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2642:19-52
+activity#com.example.android.apis.view.Switches
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2652:9-2657:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2652:49-79
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2652:19-48
+activity#com.example.android.apis.graphics.kube.Kube
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2663:9-2669:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2663:54-93
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2664:17-110
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2663:19-53
+activity#com.example.android.apis.graphics.Compass
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2671:9-2676:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2671:52-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2671:19-51
+activity#com.example.android.apis.graphics.CameraPreview
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2678:9-2683:20
+	android:screenOrientation
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2678:97-134
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2678:58-96
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2678:19-57
+activity#com.example.android.apis.graphics.CompressedTextureActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2685:9-2693:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2686:17-70
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2688:17-110
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2687:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2685:19-69
+activity#com.example.android.apis.graphics.CubeMapActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2695:9-2703:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2696:17-60
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2698:17-110
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2697:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2695:19-59
+activity#com.example.android.apis.graphics.FrameBufferObjectActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2706:9-2714:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2707:17-71
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2709:17-110
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2708:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2706:19-69
+activity#com.example.android.apis.graphics.GLSurfaceViewActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2716:9-2724:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2717:17-65
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2719:17-110
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2718:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2716:19-65
+activity#com.example.android.apis.graphics.GLES20Activity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2726:9-2734:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2727:17-65
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2729:17-110
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2728:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2726:19-58
+activity#com.example.android.apis.graphics.MatrixPaletteActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2736:9-2743:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2737:17-75
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2738:17-110
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2736:19-65
+activity#com.example.android.apis.graphics.TranslucentGLSurfaceViewActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2745:9-2753:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2746:17-77
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2748:17-110
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2747:17-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2745:19-76
+activity#com.example.android.apis.graphics.TriangleActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2755:9-2763:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2756:17-69
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2758:17-110
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2757:17-58
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2755:19-60
+activity#com.example.android.apis.graphics.spritetext.SpriteTextActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2765:9-2773:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2766:17-63
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2768:17-110
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2767:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2765:19-73
+activity#com.example.android.apis.graphics.TouchRotateActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2775:9-2783:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2776:17-64
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2778:17-110
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2777:17-64
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2775:19-63
+activity#com.example.android.apis.graphics.PolyToPoly
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2785:9-2790:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2785:55-90
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2785:19-54
+activity#com.example.android.apis.graphics.ScaleToFit
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2792:9-2797:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2792:55-90
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2792:19-54
+activity#com.example.android.apis.graphics.RoundRects
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2799:9-2804:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2799:55-90
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2799:19-54
+activity#com.example.android.apis.graphics.ShapeDrawable1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2806:9-2811:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2806:59-106
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2806:19-58
+activity#com.example.android.apis.graphics.SurfaceViewOverlay
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2813:9-2819:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2814:17-61
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2813:19-62
+activity#com.example.android.apis.graphics.ShadowCardStack
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2821:9-2828:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2822:19-61
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2823:19-70
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2821:19-59
+activity#com.example.android.apis.graphics.ShadowCardDrag
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2830:9-2837:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2831:19-60
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2832:19-70
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2830:19-58
+activity#com.example.android.apis.graphics.WindowSurface
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2839:9-2845:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2840:17-56
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2839:19-57
+activity#com.example.android.apis.graphics.TextAlign
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2847:9-2853:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2848:54-89
+	android:hardwareAccelerated
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2847:19-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2848:19-53
+activity#com.example.android.apis.graphics.Arcs
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2855:9-2860:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2855:49-78
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2855:19-48
+activity#com.example.android.apis.graphics.Patterns
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2862:9-2867:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2862:53-86
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2862:19-52
+activity#com.example.android.apis.graphics.Clipping
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2869:9-2875:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2870:53-86
+	android:hardwareAccelerated
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2869:19-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2870:19-52
+activity#com.example.android.apis.graphics.Layers
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2877:9-2882:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2877:51-82
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2877:19-50
+activity#com.example.android.apis.graphics.UnicodeChart
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2884:9-2890:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2885:57-94
+	android:hardwareAccelerated
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2884:19-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2885:19-56
+activity#com.example.android.apis.graphics.PathFillTypes
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2892:9-2897:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2892:58-96
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2892:19-57
+activity#com.example.android.apis.graphics.Pictures
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2899:9-2905:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2900:53-86
+	android:hardwareAccelerated
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2899:19-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2900:19-52
+activity#com.example.android.apis.graphics.Vertices
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2907:9-2913:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2908:53-86
+	android:hardwareAccelerated
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2907:19-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2908:19-52
+activity#com.example.android.apis.graphics.AnimateDrawables
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2915:9-2920:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2915:61-102
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2915:19-60
+activity#com.example.android.apis.graphics.SensorTest
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2922:9-2927:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2922:55-90
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2922:19-54
+activity#com.example.android.apis.graphics.AlphaBitmap
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2929:9-2934:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2929:56-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2929:19-55
+activity#com.example.android.apis.graphics.Regions
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2936:9-2941:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2936:52-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2936:19-51
+activity#com.example.android.apis.graphics.Sweep
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2943:9-2948:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2943:50-80
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2943:19-49
+activity#com.example.android.apis.graphics.BitmapMesh
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2950:9-2955:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2950:55-90
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2950:19-54
+activity#com.example.android.apis.graphics.MeasureText
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2957:9-2962:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2957:56-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2957:19-55
+activity#com.example.android.apis.graphics.Typefaces
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2964:9-2969:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2964:54-88
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2964:19-53
+activity#com.example.android.apis.graphics.FingerPaint
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2971:9-2976:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2971:56-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2971:19-55
+activity#com.example.android.apis.graphics.ColorMatrixSample
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2978:9-2983:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2978:62-98
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2978:19-61
+activity#com.example.android.apis.graphics.BitmapDecode
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2985:9-2991:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2986:57-94
+	android:hardwareAccelerated
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2985:19-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2986:19-56
+activity#com.example.android.apis.graphics.ColorFilters
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2993:9-2998:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2993:57-94
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:2993:19-56
+activity#com.example.android.apis.graphics.CreateBitmap
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3000:9-3005:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3000:57-94
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3000:19-56
+activity#com.example.android.apis.graphics.DrawPoints
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3007:9-3013:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3008:55-86
+	android:hardwareAccelerated
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3007:19-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3008:19-54
+activity#com.example.android.apis.graphics.TouchPaint
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3015:9-3022:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3015:55-91
+	android:configChanges
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3017:17-130
+	android:theme
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3016:17-51
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3015:19-54
+activity#com.example.android.apis.graphics.BitmapPixels
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3024:9-3029:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3024:57-94
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3024:19-56
+activity#com.example.android.apis.graphics.Xfermodes
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3031:9-3036:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3031:54-88
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3031:19-53
+activity#com.example.android.apis.graphics.PathEffects
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3038:9-3043:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3038:56-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3038:19-55
+activity#com.example.android.apis.graphics.GradientDrawable1
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3045:9-3050:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3045:62-112
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3045:19-61
+activity#com.example.android.apis.graphics.PurgeableBitmap
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3052:9-3057:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3052:60-113
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3052:19-59
+activity-alias#com.example.android.apis.Purgeable
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3059:8-3064:26
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3059:100-150
+	android:targetActivity
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3059:24-74
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3059:75-99
+activity#com.example.android.apis.graphics.DensityActivity
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3066:9-3071:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3066:60-92
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3066:19-59
+activity#com.example.android.apis.media.MediaPlayerDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3077:9-3082:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3077:57-90
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3077:19-56
+activity#com.example.android.apis.media.MediaPlayerDemo_Audio
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3084:9-3088:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3084:63-96
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3084:19-62
+intent-filter#android.intent.category.SAMPLE_CODE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3085:13-3087:29
+activity#com.example.android.apis.media.MediaPlayerDemo_Video
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3090:9-3094:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3090:63-96
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3090:19-62
+activity#com.example.android.apis.media.VideoViewDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3096:9-3101:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3096:55-86
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3096:19-54
+activity#com.example.android.apis.media.AudioFxDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3103:9-3108:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3103:53-82
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3103:19-52
+activity#com.example.android.apis.media.projection.MediaProjectionDemo
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3110:9-3116:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3111:17-54
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3110:19-71
+receiver#com.example.android.apis.appwidget.ExampleAppWidgetProvider
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3122:9-3128:20
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3122:19-69
+meta-data#android.appwidget.provider
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3123:13-3124:66
+	android:resource
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3124:21-63
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3123:24-65
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3125:13-3127:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3126:17-84
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3126:25-81
+activity#com.example.android.apis.appwidget.ExampleAppWidgetConfigure
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3130:9-3134:20
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3130:19-70
+intent-filter#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3131:13-3133:29
+action#android.appwidget.action.APPWIDGET_CONFIGURE
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3132:17-87
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3132:25-84
+receiver#com.example.android.apis.appwidget.ExampleBroadcastReceiver
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3136:9-3141:20
+	android:enabled
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3136:70-93
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3136:19-69
+intent-filter#android.intent.ACTION_TIME+android.intent.ACTION_TIMEZONE_CHANGED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3137:13-3140:29
+action#android.intent.ACTION_TIMEZONE_CHANGED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3138:17-81
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3138:25-78
+action#android.intent.ACTION_TIME
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3139:17-69
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3139:25-66
+activity#com.example.android.apis.nfc.ForegroundDispatch
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3147:9-3152:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3147:58-96
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3147:19-57
+activity#com.example.android.apis.nfc.TechFilter
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3154:9-3168:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3154:50-80
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3154:19-49
+intent-filter#android.nfc.action.TECH_DISCOVERED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3161:13-3163:29
+action#android.nfc.action.TECH_DISCOVERED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3162:17-77
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3162:25-74
+meta-data#android.nfc.action.TECH_DISCOVERED
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3165:13-3167:15
+	android:resource
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3166:17-51
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3165:24-73
+activity#com.example.android.apis.nfc.ForegroundNdefPush
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3170:9-3175:20
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3170:58-96
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3170:19-57
+activity#com.example.android.apis.security.KeyStoreUsage
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3177:9-3183:20
+	android:windowSoftInputMode
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3178:13-52
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3177:58-91
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3177:19-57
+instrumentation#com.example.android.apis.app.LocalSampleInstrumentation
+ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3186:5-3188:40
+	android:label
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3188:9-37
+	android:targetPackage
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3187:9-57
+	android:name
+		ADDED from /Volumes/Data/dev/personal/ApiDemos/app/src/main/AndroidManifest.xml:3186:22-68
