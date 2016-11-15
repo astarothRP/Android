@@ -14,7 +14,7 @@
     <EditText android:id="@+id/dialog_cantidad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/cantidad"
+        android:hint="@string/quantity"
         android:layout_marginTop="16dp"
         android:inputType="text"
         android:maxLines="1"

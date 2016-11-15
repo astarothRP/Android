@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="2dp">
+	<android.support.percent.PercentRelativeLayout
+		android:id="@+id/detail_item_texts_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_toStartOf="@+id/detail_item_mark_layout">
+		<TextView
+			android:id="@+id/detail_item_name_textview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			tools:text="Nombre" />
+		<TextView
+			android:id="@+id/detail_item_description_textview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/detail_item_name_textview"
+			android:layout_marginStart="20dp"
+			android:textSize="16sp"
+			tools:text="Descripción" />
+	</android.support.percent.PercentRelativeLayout>
+	<RelativeLayout
+		android:id="@+id/detail_item_mark_layout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="3dp"
+		android:layout_marginTop="4dp"
+		android:layout_toStartOf="@+id/detail_item_numbers_layout"
+		android:gravity="end"
+		app:layout_widthPercent="6%">
+		<ImageView
+			android:id="@+id/detail_item_unmark_imageview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleType="fitStart"
+			android:src="@drawable/ico_uncheck" />
+		<ImageView
+			android:id="@+id/detail_item_mark_imageview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/detail_item_unmark_imageview"
+			android:layout_alignStart="@+id/detail_item_unmark_imageview"
+			android:layout_marginBottom="2dp"
+			android:layout_marginStart="3dp"
+			android:scaleType="fitStart"
+			android:src="@drawable/ico_check"
+			android:visibility="gone"
+			tools:visibility="visible" />
+	</RelativeLayout>
+	<android.support.percent.PercentRelativeLayout
+		android:id="@+id/detail_item_numbers_layout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_marginBottom="2dp">
+		<LinearLayout
+			android:id="@+id/detail_item_amount_layout"
+			android:layout_width="wrap_content"
+			style="@style/button_number_layout">
+			<TextView
+				android:id="@+id/detail_item_amount_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/grey_light"
+				android:textSize="14sp"
+				tools:text="42.15" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text=" (€) "
+				android:textColor="@color/grey_light"
+				android:textSize="14sp" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/detail_item_quantity_layout"
+			android:layout_width="wrap_content"
+			android:layout_alignEnd="@+id/detail_item_amount_layout"
+			android:layout_alignStart="@+id/detail_item_amount_layout"
+			android:layout_below="@+id/detail_item_amount_layout"
+			android:layout_marginTop="3dp"
+			style="@style/button_number_layout">
+			<TextView
+				android:id="@+id/detail_item_quantity_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/grey_light"
+				android:textSize="14sp"
+				tools:text="4" />
+		</LinearLayout>
+	</android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:stretchColumns="0,1"><TableRow>
-    <TextView android:id="@+id/descripcion"
+    <TextView android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -16,7 +16,7 @@
         android:layout_marginLeft="10dp"
         android:text="1"
         android:layout_weight="3" />
-    <TextView android:id="@+id/cantidad"
+    <TextView android:id="@+id/quantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

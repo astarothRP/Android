@@ -1,0 +1,121 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<ImageView
+		android:id="@+id/detail_dialog_delete_imageview"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_alignParentEnd="true"
+		android:src="@drawable/ico_delete"
+		app:layout_heightPercent="9%"
+		app:layout_widthPercent="9%" />
+	<android.support.percent.PercentRelativeLayout
+		android:id="@+id/detail_dialog_data_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp">
+		<TextView
+			android:id="@+id/detail_dialog_name_textview"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/name"
+			app:layout_widthPercent="70%" />
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_toEndOf="@+id/detail_dialog_name_textview"
+			android:text="@string/amount"
+			app:layout_widthPercent="20%" />
+
+		<EditText
+			android:id="@+id/detail_dialog_name_edittext"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/detail_dialog_name_textview"
+			android:inputType="textCapWords"
+			app:layout_widthPercent="70%"
+			tools:text="Nombre del articulo" />
+		<EditText
+			android:id="@+id/detail_dialog_amount_edittext"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/detail_dialog_name_textview"
+			android:layout_toEndOf="@+id/detail_dialog_name_edittext"
+			android:inputType="numberDecimal"
+			app:layout_widthPercent="30%"
+			tools:text="25,35" />
+
+		<TextView
+			android:id="@+id/detail_dialog_description_textview"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/detail_dialog_name_edittext"
+			android:text="@string/description"
+			app:layout_widthPercent="70%" />
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/detail_dialog_name_edittext"
+			android:layout_toEndOf="@+id/detail_dialog_description_textview"
+			android:text="@string/quantity"
+			app:layout_widthPercent="20%" />
+
+		<EditText
+			android:id="@+id/detail_dialog_description_edittext"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/detail_dialog_description_textview"
+			android:inputType="textCapWords"
+			app:layout_widthPercent="70%"
+			tools:text="Nombre del articulo" />
+		<EditText
+			android:id="@+id/detail_dialog_quantity_edittext"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/detail_dialog_description_textview"
+			android:layout_toEndOf="@+id/detail_dialog_description_edittext"
+			android:inputType="number"
+			app:layout_widthPercent="20%"
+			tools:text="5" />
+		<RelativeLayout
+			android:id="@+id/detail_dialog_mark_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/detail_dialog_quantity_edittext"
+			android:layout_toEndOf="@+id/detail_dialog_quantity_edittext"
+			app:layout_widthPercent="10%">
+			<ImageView
+				android:id="@+id/detail_dialog_unmark_imageview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ico_uncheck" />
+			<ImageView
+				android:id="@+id/detail_dialog_mark_imageview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/detail_dialog_unmark_imageview"
+				android:layout_alignStart="@+id/detail_dialog_unmark_imageview"
+				android:layout_marginBottom="3dp"
+				android:layout_marginStart="8dp"
+				android:src="@drawable/ico_check"
+				android:visibility="gone" />
+		</RelativeLayout>
+	</android.support.percent.PercentRelativeLayout>
+	<LinearLayout
+		android:id="@+id/collection_dialog_ok_layout"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_below="@+id/detail_dialog_data_layout"
+		android:background="@color/grey_medium">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@android:string/ok"
+			android:textAlignment="center"
+			android:textColor="@color/cool_white" />
+	</LinearLayout>
+</android.support.percent.PercentRelativeLayout>

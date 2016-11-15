@@ -1,8 +1,10 @@
 apply plugin: 'com.android.application'
 
+def supportVersion = '24.2.1'
+
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 24
+    buildToolsVersion '24.0.3'
     packagingOptions {
         exclude 'META-INF/license'
         exclude 'META-INF/notice'
@@ -10,9 +12,9 @@ android {
         exclude 'META-INF/NOTICE'
     }
     defaultConfig {
-        applicationId "com.astaroth.listacompra"
-        minSdkVersion 15
-        targetSdkVersion 21
+        applicationId "com.astaroth.collections"
+        minSdkVersion 19
+        targetSdkVersion 24
         versionName '1.1.3'
         versionCode 7
     }
@@ -22,12 +24,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    productFlavors {
-    }
+	productFlavors {}
+	compileOptions {
+		incremental false
+	}
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:21.0.3'
-    compile 'com.firebase:firebase-client-android:2.0.3+'
+	compile project(':listacompra2'),
+		project(':dep'),
+		project(':core')
+
+	compile "com.android.support:appcompat-v7:${supportVersion}",
+		"com.android.support:design:${supportVersion}",
+		"com.android.support:percent:${supportVersion}",
+		"com.android.support:cardview-v7:${supportVersion}",
+		"com.android.support:gridlayout-v7:${supportVersion}"
+
+	compile 'com.wokdsem.kommander:kommander:0.10.0',
+		'com.wokdsem.kinject:kinject:1.1.0'
+	provided 'com.wokdsem.kinject:kinject-compiler:1.1.0'
+
+	compile 'com.firebase:firebase-client-android:2.0.3+'
 }

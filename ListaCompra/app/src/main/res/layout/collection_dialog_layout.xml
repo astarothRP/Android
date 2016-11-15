@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<EditText
+		android:id="@+id/collection_dialog_name_edittext"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		tools:text="Sample" />
+
+	<LinearLayout
+		android:layout_height="90dp"
+		style="@style/collection_dialog_linear_layout_style">
+		<ImageView
+			android:id="@+id/collection_dialog_book_imageview"
+			android:src="@drawable/ico_libro"
+			style="@style/collection_dialog_image_style" />
+		<ImageView
+			android:id="@+id/collection_dialog_trolley_imageview"
+			android:src="@drawable/ico_compra"
+			style="@style/collection_dialog_image_style" />
+		<ImageView
+			android:id="@+id/collection_dialog_film_imageview"
+			android:src="@drawable/ico_peli"
+			style="@style/collection_dialog_image_style" />
+		<ImageView
+			android:id="@+id/collection_dialog_travel_imageview"
+			android:src="@drawable/ico_viaje"
+			style="@style/collection_dialog_image_style" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		style="@style/collection_dialog_linear_layout_style">
+		<TextView
+			android:text="@string/collection_type_book"
+			style="@style/collection_dialog_text_style" />
+		<TextView
+			android:text="@string/collection_type_super"
+			style="@style/collection_dialog_text_style" />
+		<TextView
+			android:text="@string/collection_type_film"
+			style="@style/collection_dialog_text_style" />
+		<TextView
+			android:text="@string/collection_type_travel"
+			style="@style/collection_dialog_text_style" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_height="90dp"
+		style="@style/collection_dialog_linear_layout_style">
+		<ImageView
+			android:id="@+id/collection_dialog_music_imageview"
+			android:src="@drawable/ico_musica"
+			style="@style/collection_dialog_image_style" />
+		<ImageView
+			android:id="@+id/collection_dialog_present_imageview"
+			android:src="@drawable/ico_regalo"
+			style="@style/collection_dialog_image_style" />
+		<ImageView
+			android:id="@+id/collection_dialog_food_imageview"
+			android:src="@drawable/ico_comida"
+			style="@style/collection_dialog_image_style" />
+		<ImageView
+			android:id="@+id/collection_dialog_indefinied_imageview"
+			android:src="@drawable/ico_varios"
+			style="@style/collection_dialog_image_style" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		style="@style/collection_dialog_linear_layout_style">
+		<TextView
+			android:text="@string/collection_type_music"
+			style="@style/collection_dialog_text_style" />
+		<TextView
+			android:text="@string/collection_type_present"
+			style="@style/collection_dialog_text_style" />
+		<TextView
+			android:text="@string/collection_type_food"
+			style="@style/collection_dialog_text_style" />
+		<TextView
+			android:text="@string/collection_type_indefinied"
+			style="@style/collection_dialog_text_style" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/collection_dialog_ok_layout"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/grey_medium">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@android:string/ok"
+			android:textAlignment="center"
+			android:textColor="@color/cool_white" />
+	</LinearLayout>
+</LinearLayout>

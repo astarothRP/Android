@@ -19,7 +19,7 @@
     <string name="editar_articulo">Modificar Articulo</string>
     <string name="nueva_lista">Nueva Lista</string>
     <string name="editar_lista">Modificar Lista</string>
-    <string name="cantidad">Cantidad</string>
+    <string name="quantity">Cantidad</string>
     <string name="nuevo_usuario">Nuevo Usuario</string>
     <string name="update_usuario">Actualice Usuario</string>
     <string name="contrasena2">Confirme la contraseña</string>
@@ -48,8 +48,8 @@
     <string name="error_usuario">El usuario no debe contener caracteres especiales</string>
     <string name="error_articulo_obligatorio">Debe especificar el articulo</string>
     <string name="error_lista_obligatoria">Debe especificar un nombre para la lista</string>
-    <string name="error_cantidad">La cantidad debe ser un número</string>
-    <string name="error_cantidad_0">La cantidad no puede ser 0</string>
+    <string name="error_cantidad">La quantity debe ser un número</string>
+    <string name="error_cantidad_0">La quantity no puede ser 0</string>
     <string name="error_user_o_pass_mal">El usuario o la contraseña no son correctas</string>
     <string name="error_no_lista_data">No existe lista. Cree una para añadir articulos</string>
     <string name="error_bluetooth_no_activo">No se pudo activar el Bluetooth correctamente</string>

@@ -1,8 +1,56 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-    </style>
+	<style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+
+		<item name="android:windowBackground">@color/cool_white</item>
+	</style>
+
+	<style name="AppTheme" parent="BaseTheme">
+	</style>
+
+	<style name="AppTheme.NoActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="ToolbarColoredBackArrow" parent="AppTheme">
+		<item name="android:textColorSecondary">@color/cool_white</item>
+	</style>
+	<style name="collection_dialog_linear_layout_style">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:padding">15dp</item>
+		<item name="android:weightSum">4</item>
+	</style>
+
+	<style name="collection_dialog_image_style">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:scaleType">fitCenter</item>
+		<item name="android:padding">10dp</item>
+	</style>
+
+	<style name="collection_dialog_text_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textAlignment">center</item>
+	</style>
+
+	<style name="button_number_layout">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/button_drawable</item>
+		<item name="android:gravity">center</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:paddingTop">3dp</item>
+		<item name="android:paddingBottom">3dp</item>
+		<item name="android:paddingStart">7dp</item>
+		<item name="android:paddingEnd">7dp</item>
+	</style>
 
 </resources>
