@@ -4,6 +4,7 @@ import android.os.Bundle;
 import com.astaroth.listacompra.domains.Collection;
 import com.astaroth.listacompra.support.base.BaseActivity;
 import com.astaroth.listacompra.support.inject.modules.activity.HomeActivityModule;
+import com.astaroth.listacompra.support.ui.CollectionTypeUtil;
 import com.wokdsem.kommander.Response;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,11 +16,6 @@ public class HomeActivity extends BaseActivity<HomeView, HomeInteractor> {
 	@Override
 	protected HomeView getView() {
 		return new HomeView(new HomeView.ViewListener() {
-			@Override
-			public void onCollectionSelected(Collection collection) {
-				currentCollection = collection;
-			}
-
 			@Override
 			public void saveCollection(Collection collection) {
 				if (collection.id == 0) {
@@ -119,8 +115,7 @@ public class HomeActivity extends BaseActivity<HomeView, HomeInteractor> {
 					if (response == null || response.isEmpty()) {
 						view.setDataWithOutCollection();
 					} else {
-						currentCollection = response.get(0);
-						view.setDataCollection(currentCollection);
+						view.setDataCollection(response.get(0));
 					}
 				}
 			})
@@ -132,5 +127,14 @@ public class HomeActivity extends BaseActivity<HomeView, HomeInteractor> {
 				}
 			})
 			.kommand();
+	}
+
+	public void setCollectionInfo(Collection collection) {
+		currentCollection = collection;
+		if (collection == null) {
+			view.setEmptyToolbarData();
+		} else {
+			view.setToolbarData(collection.descripcion, CollectionTypeUtil.getResourceByType(collection.type), true);
+		}
 	}
 }

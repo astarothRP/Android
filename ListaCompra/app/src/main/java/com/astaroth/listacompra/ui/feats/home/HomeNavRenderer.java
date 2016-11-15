@@ -16,6 +16,7 @@ import java.util.List;
 class HomeNavRenderer extends BaseRenderer<List<Collection>, HomeNavRenderer.HomeNavCallback> {
 
 	private HomeNavAdapter adapter;
+	private Collection itemViewed;
 
 	HomeNavRenderer(RecyclerView recyclerView, HomeNavCallback callback) {
 		super(recyclerView, null, null, callback);
@@ -41,6 +42,10 @@ class HomeNavRenderer extends BaseRenderer<List<Collection>, HomeNavRenderer.Hom
 		CollectionToShow collectionToShow = adapter.deleteAndGetNextCollection(idCollection);
 		adapter.notifyDataSetChanged();
 		return collectionToShow;
+	}
+
+	void setCollectionViewed(Collection collection) {
+		itemViewed = collection;
 	}
 
 	interface HomeNavCallback {
@@ -150,7 +155,13 @@ class HomeNavRenderer extends BaseRenderer<List<Collection>, HomeNavRenderer.Hom
 			itemLayout.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					listener.onClickItem(collection);
+					if (!isItemViewed()) {
+						listener.onClickItem(collection);
+					}
+				}
+
+				private boolean isItemViewed() {
+					return itemViewed != null && collection.id == itemViewed.id;
 				}
 			});
 		}

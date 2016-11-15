@@ -1,11 +1,15 @@
 package com.astaroth.listacompra.ui.feats.home.detail;
 
+import android.annotation.TargetApi;
 import android.os.Bundle;
+import android.transition.Slide;
+import android.view.Gravity;
 import com.astaroth.listacompra.R;
 import com.astaroth.listacompra.domains.Collection;
 import com.astaroth.listacompra.domains.Detail;
 import com.astaroth.listacompra.support.base.BaseFragment;
 import com.astaroth.listacompra.support.ui.NotParcelled;
+import com.astaroth.listacompra.ui.feats.home.HomeActivity;
 import com.wokdsem.kommander.Response;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +20,7 @@ public class DetailFragment extends BaseFragment<DetailView, DetaiInteractor> {
 	Collection collection;
 
 	public static DetailFragment newInstance(Collection collection) {
-		DetailFragment detailFragment = new DetailFragment();
+		DetailFragment detailFragment = getFragmentAnimated();
 		Bundle bundle = new Bundle();
 		bundle.putString(ARG_COLLECTION, NotParcelled.toNotParcelled(collection));
 		detailFragment.setArguments(bundle);
@@ -24,7 +28,19 @@ public class DetailFragment extends BaseFragment<DetailView, DetaiInteractor> {
 	}
 
 	public static DetailFragment newEmptyInstance() {
-		return new DetailFragment();
+		return getFragmentAnimated();
+	}
+
+	@TargetApi(21)
+	private static DetailFragment getFragmentAnimated() {
+		DetailFragment detailFragment = new DetailFragment();
+		if (android.os.Build.VERSION.SDK_INT >= 21) {
+			Slide slideTransition = new Slide(Gravity.LEFT);
+			slideTransition.setDuration(500);
+			detailFragment.setExitTransition(slideTransition);
+			detailFragment.setEnterTransition(slideTransition);
+		}
+		return detailFragment;
 	}
 
 	@Override
@@ -65,6 +81,7 @@ public class DetailFragment extends BaseFragment<DetailView, DetaiInteractor> {
 	public void onStart() {
 		super.onStart();
 		fillAllData();
+		viewContextInject(HomeActivity.class).setCollectionInfo(collection);
 	}
 
 	private void fillAllData() {

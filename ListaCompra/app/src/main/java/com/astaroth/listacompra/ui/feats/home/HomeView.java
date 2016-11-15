@@ -15,7 +15,6 @@ import com.astaroth.listacompra.domains.Collection;
 import com.astaroth.listacompra.support.base.ActivityNavigator;
 import com.astaroth.listacompra.support.base.BaseActivityView;
 import com.astaroth.listacompra.support.domain.CollectionToShow;
-import com.astaroth.listacompra.support.ui.CollectionTypeUtil;
 import com.astaroth.listacompra.ui.feats.home.detail.DetailFragment;
 import java.util.List;
 
@@ -100,17 +99,19 @@ class HomeView extends BaseActivityView {
 	}
 
 	void setDataWithOutCollection() {
-		setToolbarData(getDefaultAppName(), R.drawable.carrito, false);
 		createFragment(DetailFragment.newEmptyInstance());
 	}
 
 	void setDataCollection(Collection collection) {
-		listener.onCollectionSelected(collection);
-		setToolbarData(collection.descripcion, CollectionTypeUtil.getResourceByType(collection.type), true);
+		renderer.setCollectionViewed(collection);
 		createFragment(DetailFragment.newInstance(collection));
 	}
 
-	private void setToolbarData(String title, int resource, boolean showMenu) {
+	void setEmptyToolbarData() {
+		setToolbarData(getDefaultAppName(), R.drawable.carrito, false);
+	}
+
+	void setToolbarData(String title, int resource, boolean showMenu) {
 		toolbar.setTitle(title);
 		toolbar.setNavigationIcon(resource);
 		showToolbarMenu(showMenu, toolbar.getMenu());
@@ -132,7 +133,7 @@ class HomeView extends BaseActivityView {
 
 	private void createFragment(DetailFragment fragmentToShow) {
 		ActivityNavigator navigator = viewContextInject(ActivityNavigator.class);
-		navigator.navigate(fragmentToShow, ActivityNavigator.B_REF_SETTINGS);
+		navigator.navigate(fragmentToShow);
 	}
 
 	void addCollectionToDrawer(Collection collection) {
@@ -183,9 +184,6 @@ class HomeView extends BaseActivityView {
 	}
 
 	interface ViewListener {
-
-		void onCollectionSelected(Collection collection);
-
 		void saveCollection(Collection collection);
 
 		void deleteCollection();
