@@ -12,11 +12,11 @@ android {
         exclude 'META-INF/NOTICE'
     }
     defaultConfig {
-        applicationId "com.astaroth.collections"
+        applicationId "com.astaroth.listacompra"
         minSdkVersion 19
         targetSdkVersion 24
-        versionName '1.2.0'
-        versionCode 8
+        versionName '1.2.1'
+        versionCode 9
     }
     buildTypes {
         release {
@@ -44,6 +44,4 @@ dependencies {
 	compile 'com.wokdsem.kommander:kommander:0.10.0',
 		'com.wokdsem.kinject:kinject:1.1.0'
 	provided 'com.wokdsem.kinject:kinject-compiler:1.1.0'
-
-	compile 'com.firebase:firebase-client-android:2.0.3+'
 }

@@ -106,6 +106,12 @@ public class HomeActivity extends BaseActivity<HomeView, HomeInteractor> {
 		fillCollections();
 	}
 
+	@Override
+	protected boolean onBackIntercept() {
+		this.finish();
+		return true;
+	}
+
 	private void fillCollections() {
 		interactor.getAllCollections()
 			.setOnCompleted(new Response.OnCompleted<List<Collection>>() {

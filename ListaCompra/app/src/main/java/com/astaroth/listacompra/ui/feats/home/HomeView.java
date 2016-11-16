@@ -92,6 +92,13 @@ class HomeView extends BaseActivityView {
 		this.drawer = (DrawerLayout) view.findViewById(R.id.home_drawer);
 		RecyclerView drawerRecycler = (RecyclerView) view.findViewById(R.id.home_drawer_recycler);
 		renderer = new HomeNavRenderer(drawerRecycler, drawerCallback);
+		view.findViewById(R.id.home_footer_layout).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				drawer.closeDrawers();
+				createCollectionDialog(null);
+			}
+		});
 	}
 
 	void fillDrawer(List<Collection> collections) {
@@ -163,12 +170,6 @@ class HomeView extends BaseActivityView {
 			public void onClickItem(Collection collection) {
 				drawer.closeDrawers();
 				setDataCollection(collection);
-			}
-
-			@Override
-			public void onAddCollectionClick() {
-				drawer.closeDrawers();
-				createCollectionDialog(null);
 			}
 		};
 	}
