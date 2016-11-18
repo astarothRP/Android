@@ -2,7 +2,9 @@ package com.astaroth.listacompra.ui.feats.home.detail;
 
 import android.annotation.TargetApi;
 import android.os.Bundle;
+import android.transition.Fade;
 import android.transition.Slide;
+import android.transition.Visibility;
 import android.view.Gravity;
 import com.astaroth.listacompra.R;
 import com.astaroth.listacompra.domains.Collection;
@@ -35,9 +37,11 @@ public class DetailFragment extends BaseFragment<DetailView, DetaiInteractor> {
 	private static DetailFragment getFragmentAnimated() {
 		DetailFragment detailFragment = new DetailFragment();
 		if (android.os.Build.VERSION.SDK_INT >= 21) {
+			Fade fadeTransition = new Fade(Visibility.MODE_OUT);
+			fadeTransition.setDuration(600);
 			Slide slideTransition = new Slide(Gravity.LEFT);
 			slideTransition.setDuration(500);
-			detailFragment.setExitTransition(slideTransition);
+			detailFragment.setExitTransition(fadeTransition);
 			detailFragment.setEnterTransition(slideTransition);
 		}
 		return detailFragment;
