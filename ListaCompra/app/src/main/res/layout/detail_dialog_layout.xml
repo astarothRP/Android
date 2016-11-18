@@ -61,7 +61,7 @@
 			android:layout_below="@+id/detail_dialog_name_edittext"
 			android:layout_toEndOf="@+id/detail_dialog_description_textview"
 			android:text="@string/quantity"
-			app:layout_widthPercent="20%" />
+			app:layout_widthPercent="30%" />
 
 		<EditText
 			android:id="@+id/detail_dialog_description_edittext"
@@ -85,8 +85,8 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_alignBottom="@+id/detail_dialog_quantity_edittext"
-			android:layout_toEndOf="@+id/detail_dialog_quantity_edittext"
-			app:layout_widthPercent="10%">
+			android:layout_alignParentEnd="true"
+			app:layout_widthPercent="7%">
 			<ImageView
 				android:id="@+id/detail_dialog_unmark_imageview"
 				android:layout_width="wrap_content"
