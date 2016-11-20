@@ -2,7 +2,7 @@
 <resources>
 
 	<!-- GENERAL -->
-	<string name="app_name">Lista Compra</string>
+	<string name="app_name">Notepad</string>
 	<string name="recycler_empty">No hay datos que mostrar</string>
 	<string name="edit">Editar</string>
 	<string name="delete">Borrar</string>
