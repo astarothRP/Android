@@ -2,6 +2,7 @@ package com.astaroth.listacompra.ui.feats.home;
 
 import android.content.DialogInterface;
 import android.content.res.Resources;
+import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
@@ -25,8 +26,6 @@ class HomeView extends BaseActivityView {
 	private HomeNavRenderer renderer;
 	private Toolbar toolbar;
 
-	private HomeNavRenderer.HomeNavCallback drawerCallback = getDrawerCallback();
-
 	HomeView(ViewListener listener) {
 		super(R.layout.home_activity_layout, R.id.home_container_framelayout);
 		this.listener = listener;
@@ -41,7 +40,7 @@ class HomeView extends BaseActivityView {
 
 	private void setUpToolbar(Toolbar toolbar) {
 		this.toolbar = toolbar;
-		toolbar.setNavigationIcon(R.drawable.carrito);
+		toolbar.setNavigationIcon(R.drawable.ico_app);
 		toolbar.setNavigationOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -91,14 +90,15 @@ class HomeView extends BaseActivityView {
 	private void setUpDrawer(View view) {
 		this.drawer = (DrawerLayout) view.findViewById(R.id.home_drawer);
 		RecyclerView drawerRecycler = (RecyclerView) view.findViewById(R.id.home_drawer_recycler);
-		renderer = new HomeNavRenderer(drawerRecycler, drawerCallback);
-		view.findViewById(R.id.home_footer_layout).setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				drawer.closeDrawers();
-				createCollectionDialog(null);
-			}
-		});
+		renderer = new HomeNavRenderer(drawerRecycler, getDrawerCallback());
+		view.findViewById(R.id.home_footer_layout)
+			.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					drawer.closeDrawers();
+					createCollectionDialog(null);
+				}
+			});
 	}
 
 	void fillDrawer(List<Collection> collections) {
@@ -106,16 +106,17 @@ class HomeView extends BaseActivityView {
 	}
 
 	void setDataWithOutCollection() {
-		createFragment(DetailFragment.newEmptyInstance());
+		createFragment(DetailFragment.newInstance(new Bundle()));
 	}
 
 	void setDataCollection(Collection collection) {
 		renderer.setCollectionViewed(collection);
-		createFragment(DetailFragment.newInstance(collection));
+		Bundle collectionBundle = DetailFragment.getCollectionBundle(collection);
+		createFragment(DetailFragment.newInstance(collectionBundle));
 	}
 
 	void setEmptyToolbarData() {
-		setToolbarData(getDefaultAppName(), R.drawable.carrito, false);
+		setToolbarData(getDefaultAppName(), R.drawable.ico_app, false);
 	}
 
 	void setToolbarData(String title, int resource, boolean showMenu) {
@@ -185,6 +186,7 @@ class HomeView extends BaseActivityView {
 	}
 
 	interface ViewListener {
+
 		void saveCollection(Collection collection);
 
 		void deleteCollection();

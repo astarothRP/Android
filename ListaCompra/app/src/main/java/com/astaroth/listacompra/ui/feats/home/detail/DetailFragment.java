@@ -19,18 +19,18 @@ import java.util.List;
 public class DetailFragment extends BaseFragment<DetailView, DetaiInteractor> {
 
 	private static String ARG_COLLECTION = DetailFragment.class.getSimpleName() + "arg_collection";
-	Collection collection;
+	private Collection collection;
 
-	public static DetailFragment newInstance(Collection collection) {
+	public static DetailFragment newInstance(Bundle bundle) {
 		DetailFragment detailFragment = getFragmentAnimated();
-		Bundle bundle = new Bundle();
-		bundle.putString(ARG_COLLECTION, NotParcelled.toNotParcelled(collection));
 		detailFragment.setArguments(bundle);
 		return detailFragment;
 	}
 
-	public static DetailFragment newEmptyInstance() {
-		return getFragmentAnimated();
+	public static Bundle getCollectionBundle(Collection collection) {
+		Bundle bundle = new Bundle();
+		bundle.putString(ARG_COLLECTION, NotParcelled.toNotParcelled(collection));
+		return bundle;
 	}
 
 	@TargetApi(21)
@@ -84,8 +84,13 @@ public class DetailFragment extends BaseFragment<DetailView, DetaiInteractor> {
 	@Override
 	public void onStart() {
 		super.onStart();
-		fillAllData();
 		viewContextInject(HomeActivity.class).setCollectionInfo(collection);
+	}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		fillAllData();
 	}
 
 	private void fillAllData() {
