@@ -13,6 +13,7 @@ import static com.astaroth.listacompra.domains.Constants.EMPTY_DOUBLE;
 import static com.astaroth.listacompra.domains.Constants.EMPTY_INT;
 
 class DetailDialogHolder {
+
 	private final EditText name;
 	private final EditText description;
 	private final EditText quantity;
@@ -20,7 +21,7 @@ class DetailDialogHolder {
 	private final ImageView marked;
 	private Detail detail = null;
 
-	DetailDialogHolder(AlertDialog dialog, DetailDialog.DetailDialogListener listener){
+	DetailDialogHolder(AlertDialog dialog, DetailDialog.DetailDialogListener listener) {
 		name = (EditText) dialog.findViewById(R.id.detail_dialog_name_edittext);
 		description = (EditText) dialog.findViewById(R.id.detail_dialog_description_edittext);
 		quantity = (EditText) dialog.findViewById(R.id.detail_dialog_quantity_edittext);
@@ -49,7 +50,7 @@ class DetailDialogHolder {
 		buttonOk.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				loadData();
+				loadDataFromForm();
 				if (checkData()) {
 					dialog.dismiss();
 					listener.onItemSaved(detail);
@@ -82,7 +83,7 @@ class DetailDialogHolder {
 		delete.setVisibility(isNewDetail() ? View.GONE : View.VISIBLE);
 	}
 
-	private void loadData(){
+	private void loadDataFromForm() {
 		if (isNewDetail()) {
 			detail = new Detail(getStringValue(description), getStringValue(name), getIntValue(quantity), 0L,
 								getDoubleValue(amount), getBooleanValue(marked));

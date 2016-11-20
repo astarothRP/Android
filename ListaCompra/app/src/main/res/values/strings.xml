@@ -13,6 +13,7 @@
 	<string name="add_collection">Añadir lista</string>
 	<string name="delete_collection_title">Borrar</string>
 	<string name="delete_collection_message">¿Confirma que desea borrar la colección?</string>
+	<string name="error_type_mandatory">Debe especificar un tipo</string>
 
 	<string name="collection_type_book">Libros</string>
 	<string name="collection_type_super">Súper</string>

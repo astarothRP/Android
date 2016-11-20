@@ -6,7 +6,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.ContentLoadingProgressBar;
 import android.support.v7.widget.RecyclerView;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -23,8 +22,8 @@ class DetailView extends BaseFragmentView {
 	private final ViewListener listener;
 	private DetailRenderer renderer;
 	private FloatingActionButton addDetailFab;
-	private DetailRenderer.DetailRendererListener rendererListener = getDetailRendererListener();
 	private View coordinatorLayout;
+	private DetailRenderer.DetailRendererListener rendererListener = getDetailRendererListener();
 
 	DetailView(ViewListener listener) {
 		super(R.layout.detail_fragment_layout);
@@ -47,27 +46,22 @@ class DetailView extends BaseFragmentView {
 		addDetailFab.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				showDetailDialog(null);
-			}
-		});
-		addDetailFab.setOnTouchListener(new View.OnTouchListener() {
-			@Override
-			public boolean onTouch(View v, MotionEvent event) {
 				if (android.os.Build.VERSION.SDK_INT >= 21) {
-					animateRevealColorFromCoordinates(coordinatorLayout, (int) event.getRawX(), (int) event.getRawY());
+					animateRevealColorFromCoordinates(coordinatorLayout);
 				}
-				return false;
+				showDetailDialog(null);
 			}
 		});
 	}
 
 	@TargetApi(21)
-	private Animator animateRevealColorFromCoordinates(View viewRoot, int x, int y) {
+	private Animator animateRevealColorFromCoordinates(View viewRoot) {
 		float finalRadius = (float) Math.hypot(viewRoot.getWidth(), viewRoot.getHeight());
 		int color = ContextCompat.getColor(viewRoot.getContext(), R.color.grey_medium);
 		int duration = viewRoot.getResources()
 			.getInteger(R.integer.anim_duration);
-
+		int x = viewRoot.getWidth();
+		int y = viewRoot.getHeight();
 		Animator anim = ViewAnimationUtils.createCircularReveal(viewRoot, x, y, 0, finalRadius);
 		viewRoot.setBackgroundColor(color);
 		anim.setDuration(duration);
@@ -95,8 +89,8 @@ class DetailView extends BaseFragmentView {
 											}
 
 											private void setDefaultBackgroundColor() {
-												int color = ContextCompat.getColor(coordinatorLayout.getContext(), R.color
-													.grey_light);
+												int color = ContextCompat.getColor(coordinatorLayout.getContext(),
+																				   R.color.grey_light);
 												coordinatorLayout.setBackgroundColor(color);
 											}
 										});
