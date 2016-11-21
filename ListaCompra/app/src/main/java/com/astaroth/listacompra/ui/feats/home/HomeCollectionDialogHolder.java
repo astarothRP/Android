@@ -25,8 +25,8 @@ class HomeCollectionDialogHolder {
 	private final ImageView indefiniedImage;
 	private final ImageView[] allImages;
 	private final EditText description;
-	private Collection.Type collectionType = null;
-	private Collection collection = null;
+	private Collection.Type collectionType;
+	private Collection collection;
 
 	HomeCollectionDialogHolder(AlertDialog dialog, HomeCollectionDialog.HomeCollectionDialogListener listener) {
 		bookImage = (ImageView) dialog.findViewById(R.id.collection_dialog_book_imageview);
@@ -70,7 +70,7 @@ class HomeCollectionDialogHolder {
 			@Override
 			public void onClick(View v) {
 				loadDataFromForm();
-				if (checkData()) {
+				if (validateForm()) {
 					dialog.dismiss();
 					listener.onItemSaved(collection);
 				} else {
@@ -79,7 +79,7 @@ class HomeCollectionDialogHolder {
 				}
 			}
 
-			private boolean checkData() {
+			private boolean validateForm() {
 				return collection.type != null;
 			}
 		});

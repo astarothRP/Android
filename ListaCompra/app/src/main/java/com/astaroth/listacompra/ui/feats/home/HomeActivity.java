@@ -78,7 +78,7 @@ public class HomeActivity extends BaseActivity<HomeView, HomeInteractor> {
 			.setOnCompleted(new Response.OnCompleted<Void>() {
 				@Override
 				public void onCompleted(Void response) {
-					view.deleteCollectionFromDrawer(currentCollection.id);
+					view.deleteCollectionInDrawer(currentCollection.id);
 				}
 			})
 			.setOnError(new Response.OnError() {

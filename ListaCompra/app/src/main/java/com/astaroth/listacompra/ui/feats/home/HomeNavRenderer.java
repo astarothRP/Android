@@ -103,16 +103,20 @@ class HomeNavRenderer extends BaseRenderer<List<Collection>, HomeNavRenderer.Hom
 				collection = items.get(f);
 				if (idCollection == collection.id) {
 					items.remove(f);
-					if (f != 0) {
-						return CollectionToShow.collection(items.get(f - 1));
-					} else if (items.size() > 0) {
-						return CollectionToShow.collection(items.get(f));
-					} else {
-						return CollectionToShow.emptyCollection();
-					}
+					return getNextCollection(f);
 				}
 			}
 			return CollectionToShow.errorCollection();
+		}
+
+		private CollectionToShow getNextCollection(int position) {
+			if (position != 0) {
+				return CollectionToShow.collection(items.get(position - 1));
+			} else if (items.size() > 0) {
+				return CollectionToShow.collection(items.get(position));
+			} else {
+				return CollectionToShow.emptyCollection();
+			}
 		}
 	}
 

@@ -149,7 +149,7 @@ class HomeView extends BaseActivityView {
 		setDataCollection(collection);
 	}
 
-	void deleteCollectionFromDrawer(long idCollection) {
+	void deleteCollectionInDrawer(long idCollection) {
 		CollectionToShow collectionToShow = renderer.deleteAndGetNextCollection(idCollection);
 		switch (collectionToShow.status) {
 			case COLLECTION:

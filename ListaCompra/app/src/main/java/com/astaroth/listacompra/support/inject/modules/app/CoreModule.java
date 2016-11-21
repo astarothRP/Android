@@ -29,7 +29,7 @@ public class CoreModule {
 	}
 
 	@Provides(singleton = true)
-	public Trolley provideLista(Storage storage) {
+	public Trolley provideTrolley(Storage storage) {
 		return new TrolleyEngine(storage);
 	}
 

@@ -19,7 +19,7 @@ class DetailDialogHolder {
 	private final EditText quantity;
 	private final EditText amount;
 	private final ImageView marked;
-	private Detail detail = null;
+	private Detail detail;
 
 	DetailDialogHolder(AlertDialog dialog, DetailDialog.DetailDialogListener listener) {
 		name = (EditText) dialog.findViewById(R.id.detail_dialog_name_edittext);
@@ -51,7 +51,7 @@ class DetailDialogHolder {
 			@Override
 			public void onClick(View v) {
 				loadDataFromForm();
-				if (checkData()) {
+				if (validateForm()) {
 					dialog.dismiss();
 					listener.onItemSaved(detail);
 				} else {
@@ -60,7 +60,7 @@ class DetailDialogHolder {
 				}
 			}
 
-			private boolean checkData() {
+			private boolean validateForm() {
 				return !detail.name.isEmpty();
 			}
 		});

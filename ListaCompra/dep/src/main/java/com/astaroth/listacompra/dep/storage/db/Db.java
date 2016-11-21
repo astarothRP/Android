@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.astaroth.listacompra.dep.storage.db.DBConstants.*;
-import static com.astaroth.listacompra.domains.Collection.Type.*;
 
 public class Db {
 
@@ -43,51 +42,7 @@ public class Db {
 
 	private Collection getCollectionByRow(Cursor cursor) {
 		return new Collection(cursor.getInt(COLUMN_COL_ID_POSITION), cursor.getString(COLUMN_COL_DESCRIPTION_POSITION),
-							  convertIntToCollectionType(cursor.getInt(COLUMN_COL_TYPE_POSITION)));
-	}
-
-	private Collection.Type convertIntToCollectionType(int type) {
-		switch (type) {
-			case COL_TYPE_FILM:
-				return FILM;
-			case COL_TYPE_TRAVEL:
-				return TRAVEL;
-			case COL_TYPE_TROLLEY:
-				return TROLLEY;
-			case COL_TYPE_BOOK:
-				return BOOK;
-			case COL_TYPE_MUSIC:
-				return MUSIC;
-			case COL_TYPE_PRESENT:
-				return PRESENT;
-			case COL_TYPE_FOOD:
-				return FOOD;
-			case COL_TYPE_INDEFINIED:
-			default:
-				return INDEFINIED;
-		}
-	}
-
-	private int convertCollectionTypeToInt(Collection.Type type) {
-		switch (type) {
-			case FILM:
-				return COL_TYPE_FILM;
-			case TRAVEL:
-				return COL_TYPE_TRAVEL;
-			case TROLLEY:
-				return COL_TYPE_TROLLEY;
-			case BOOK:
-				return COL_TYPE_BOOK;
-			case MUSIC:
-				return COL_TYPE_MUSIC;
-			case PRESENT:
-				return COL_TYPE_PRESENT;
-			case FOOD:
-				return COL_TYPE_FOOD;
-			case INDEFINIED:
-			default:
-				return COL_TYPE_INDEFINIED;
-		}
+							  DbColTypeParser.convertIntToCollectionType(cursor.getInt(COLUMN_COL_TYPE_POSITION)));
 	}
 
 	public List<Detail> getDetailsByCollection(long collection) {
@@ -130,7 +85,7 @@ public class Db {
 	private ContentValues getCollectionContentValues(Collection collection) {
 		ContentValues initialValues = new ContentValues();
 		initialValues.put(COLUMN_COLLECTION_DESCRIPCION, collection.descripcion);
-		initialValues.put(COLUMN_COLLECTION_TYPE, convertCollectionTypeToInt(collection.type));
+		initialValues.put(COLUMN_COLLECTION_TYPE, DbColTypeParser.convertCollectionTypeToInt(collection.type));
 		return initialValues;
 	}
 
@@ -175,7 +130,7 @@ public class Db {
 		initialValues.put(COLUMN_DETAILS_DESCRIPCION, detail.description);
 		initialValues.put(COLUMN_DETAILS_NAME, detail.name);
 		initialValues.put(COLUMN_DETAILS_CANTIDAD, detail.quantity);
-		initialValues.put(COLUMN_DETAILS_IDCOLLECTION, detail.fkIdCollection);
+		initialValues.put(COLUMN_DETAILS_IDCOLLECTION, detail.collectionId);
 		initialValues.put(COLUMN_DETAILS_IMPORTE, detail.amount);
 		initialValues.put(COLUMN_DETAILS_MARCADO, detail.mark);
 		return initialValues;

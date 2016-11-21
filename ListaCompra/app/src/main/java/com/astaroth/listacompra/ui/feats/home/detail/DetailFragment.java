@@ -119,7 +119,7 @@ public class DetailFragment extends BaseFragment<DetailView, DetaiInteractor> {
 	}
 
 	private void createDetail(final Detail detail) {
-		detail.fkIdCollection = collection.id;
+		detail.collectionId = collection.id;
 		interactor.createDetail(detail)
 			.setOnCompleted(new Response.OnCompleted<Long>() {
 				@Override
