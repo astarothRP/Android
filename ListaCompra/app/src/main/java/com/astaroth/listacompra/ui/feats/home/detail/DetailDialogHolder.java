@@ -19,6 +19,7 @@ class DetailDialogHolder {
 	private final EditText quantity;
 	private final EditText amount;
 	private final ImageView marked;
+	private final View delete;
 	private Detail detail;
 
 	DetailDialogHolder(AlertDialog dialog, DetailDialog.DetailDialogListener listener) {
@@ -27,6 +28,7 @@ class DetailDialogHolder {
 		quantity = (EditText) dialog.findViewById(R.id.detail_dialog_quantity_edittext);
 		amount = (EditText) dialog.findViewById(R.id.detail_dialog_amount_edittext);
 		marked = (ImageView) dialog.findViewById(R.id.detail_dialog_mark_imageview);
+		delete = dialog.findViewById(R.id.detail_dialog_delete_imageview);
 		loadListeners(dialog, listener);
 	}
 
@@ -42,6 +44,9 @@ class DetailDialogHolder {
 				amount.setText(String.valueOf(detail.amount));
 			}
 			marked.setVisibility((detail.mark == 1) ? View.VISIBLE : View.GONE);
+			delete.setVisibility(View.VISIBLE);
+		} else {
+			delete.setVisibility(View.GONE);
 		}
 	}
 
@@ -72,7 +77,6 @@ class DetailDialogHolder {
 				marked.setVisibility(marked.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
 			}
 		});
-		View delete = dialog.findViewById(R.id.detail_dialog_delete_imageview);
 		delete.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -80,7 +84,7 @@ class DetailDialogHolder {
 				listener.delete(detail);
 			}
 		});
-		delete.setVisibility(isNewDetail() ? View.GONE : View.VISIBLE);
+
 	}
 
 	private void loadDataFromForm() {

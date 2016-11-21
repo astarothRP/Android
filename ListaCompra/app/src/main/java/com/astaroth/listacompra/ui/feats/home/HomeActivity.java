@@ -1,5 +1,6 @@
 package com.astaroth.listacompra.ui.feats.home;
 
+import android.os.Bundle;
 import com.astaroth.listacompra.domains.Collection;
 import com.astaroth.listacompra.support.base.BaseActivity;
 import com.astaroth.listacompra.support.inject.modules.activity.HomeActivityModule;
@@ -100,9 +101,11 @@ public class HomeActivity extends BaseActivity<HomeView, HomeInteractor> {
 	}
 
 	@Override
-	protected void onResume() {
-		super.onResume();
-		fillCollections();
+	protected void onCreated(Bundle savedInstanceState) {
+		super.onCreated(savedInstanceState);
+		if (savedInstanceState==null) {
+			fillCollections();
+		}
 	}
 
 	@Override
@@ -120,7 +123,11 @@ public class HomeActivity extends BaseActivity<HomeView, HomeInteractor> {
 					if (response == null || response.isEmpty()) {
 						view.setDataWithOutCollection();
 					} else {
-						view.setDataCollection(response.get(0));
+						if (currentCollection!=null) {
+							view.setDataCollection(currentCollection);
+						} else {
+							view.setDataCollection(response.get(0));
+						}
 					}
 				}
 			})

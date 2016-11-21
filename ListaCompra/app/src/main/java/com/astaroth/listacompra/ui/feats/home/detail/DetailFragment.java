@@ -2,6 +2,7 @@ package com.astaroth.listacompra.ui.feats.home.detail;
 
 import android.annotation.TargetApi;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.transition.Fade;
 import android.transition.Slide;
 import android.transition.Visibility;
@@ -82,6 +83,14 @@ public class DetailFragment extends BaseFragment<DetailView, DetaiInteractor> {
 	}
 
 	@Override
+	public void onCreate(@Nullable Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		if (savedInstanceState==null) {
+			fillAllData();
+		}
+	}
+
+	@Override
 	public void onStart() {
 		super.onStart();
 		viewContextInject(HomeActivity.class).setCollectionInfo(collection);
@@ -90,7 +99,6 @@ public class DetailFragment extends BaseFragment<DetailView, DetaiInteractor> {
 	@Override
 	public void onResume() {
 		super.onResume();
-		fillAllData();
 	}
 
 	private void fillAllData() {

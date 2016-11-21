@@ -11,7 +11,8 @@
 		android:layout_alignParentEnd="true"
 		android:src="@drawable/ico_delete"
 		app:layout_heightPercent="9%"
-		app:layout_widthPercent="9%" />
+		app:layout_widthPercent="9%"
+		android:visibility="gone" />
 	<android.support.percent.PercentRelativeLayout
 		android:id="@+id/detail_dialog_data_layout"
 		android:layout_width="match_parent"
