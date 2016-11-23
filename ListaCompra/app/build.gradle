@@ -15,8 +15,8 @@ android {
         applicationId "com.astaroth.listacompra"
         minSdkVersion 19
         targetSdkVersion 25
-        versionName '1.2.4'
-        versionCode 12
+        versionName '1.2.5'
+        versionCode 13
     }
     buildTypes {
         release {

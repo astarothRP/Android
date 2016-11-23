@@ -101,11 +101,9 @@ public class HomeActivity extends BaseActivity<HomeView, HomeInteractor> {
 	}
 
 	@Override
-	protected void onCreated(Bundle savedInstanceState) {
-		super.onCreated(savedInstanceState);
-		if (savedInstanceState==null) {
-			fillCollections();
-		}
+	protected void onResume() {
+		super.onResume();
+		fillCollections();
 	}
 
 	@Override
@@ -119,16 +117,7 @@ public class HomeActivity extends BaseActivity<HomeView, HomeInteractor> {
 			.setOnCompleted(new Response.OnCompleted<List<Collection>>() {
 				@Override
 				public void onCompleted(List<Collection> response) {
-					view.fillDrawer(response);
-					if (response == null || response.isEmpty()) {
-						view.setDataWithOutCollection();
-					} else {
-						if (currentCollection!=null) {
-							view.setDataCollection(currentCollection);
-						} else {
-							view.setDataCollection(response.get(0));
-						}
-					}
+					setCollectionsAtView(response);
 				}
 			})
 			.setOnError(new Response.OnError() {
@@ -139,6 +128,19 @@ public class HomeActivity extends BaseActivity<HomeView, HomeInteractor> {
 				}
 			})
 			.kommand();
+	}
+
+	private void setCollectionsAtView(List<Collection> collections) {
+		view.fillDrawer(collections);
+		if (collections == null || collections.isEmpty()) {
+			view.setDataWithOutCollection();
+		} else {
+			if (currentCollection!=null) {
+				view.setDataCollection(currentCollection);
+			} else {
+				view.setDataCollection(collections.get(0));
+			}
+		}
 	}
 
 	public void setCollectionInfo(Collection collection) {

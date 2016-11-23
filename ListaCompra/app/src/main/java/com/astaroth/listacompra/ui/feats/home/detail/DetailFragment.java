@@ -83,11 +83,8 @@ public class DetailFragment extends BaseFragment<DetailView, DetaiInteractor> {
 	}
 
 	@Override
-	public void onCreate(@Nullable Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		if (savedInstanceState==null) {
-			fillAllData();
-		}
+	protected void onViewCreated() {
+		fillAllData();
 	}
 
 	@Override
