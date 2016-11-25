@@ -2,7 +2,6 @@ package com.astaroth.listacompra.support.base;
 
 import android.support.annotation.IdRes;
 import android.support.annotation.LayoutRes;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import com.astaroth.listacompra.instruments.inject.Injector;
 
